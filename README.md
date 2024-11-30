@@ -7,7 +7,7 @@ Nama: Fajira Zahara
 <div align="center">  
 NIM: 24343033
 
-Universitas Negri Padang
+Universitas Negeri Padang
 <div align="center">  
 Dosen Pengajar: Randi Proska Sandra, S.Pd, M.Sc
 <div align="center">
