@@ -14,7 +14,7 @@ Mata Kuliah: Algoritma Permograman
 
 ----
 
-
+<div align="center">
 Repository ini mencakup semua penjelasan dari materi Algoritma Permograman yang telah di tugaskan.
 
 
