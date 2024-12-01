@@ -35,15 +35,15 @@ Mata Kuliah: Algoritma Permograman
 ---
 ### <img src="https://media.giphy.com/media/dbDbUCnK9QBDg3Yor3/giphy.gif" width="50" height="50"> Modul 6 (Flow Control - Looping)  
 ---
-### <img src="https://media.giphy.com/media/ggpoVsIg0LwtHfTBEY/giphy.gif" width="50" height="50"> Modul 7 (Algoritma, Pemograman dan IDE)  
+### <img src="https://media.giphy.com/media/ggpoVsIg0LwtHfTBEY/giphy.gif" width="50" height="50"> Modul 7 (Array)  
 ---
-### <img src="https://media.giphy.com/media/zIN8NHSfum1NkCkNgI/giphy.gif?cid=ecf05e478xcf5kl7v7clt8hqrp06cfs6xdsyspb824fn00ln&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="50" height="50"> Modul 8 (Algoritma, Pemograman dan IDE)  
+### <img src="https://media.giphy.com/media/zIN8NHSfum1NkCkNgI/giphy.gif?cid=ecf05e478xcf5kl7v7clt8hqrp06cfs6xdsyspb824fn00ln&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="50" height="50"> Modul 8 (Fungsi dan Prosedur)  
 ---
-### <img src="https://media.giphy.com/media/6rNcvmYFRmK3mfm0Ot/giphy.gif?cid=ecf05e47yxlu2labhqob8lu316qup3na2gmwaxe2t7ajzc5p&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="50" height="50"> Modul 9 (Algoritma, Pemograman dan IDE)  
+### <img src="https://media.giphy.com/media/6rNcvmYFRmK3mfm0Ot/giphy.gif?cid=ecf05e47yxlu2labhqob8lu316qup3na2gmwaxe2t7ajzc5p&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="50" height="50"> Modul 9 (Pointer)  
 ---
-### <img src="https://media.giphy.com/media/ilRltVUHwX18lnOPMM/giphy.gif?cid=ecf05e478xcf5kl7v7clt8hqrp06cfs6xdsyspb824fn00ln&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="50" height="50"> Modul 10 (Algoritma, Pemograman dan IDE)  
+### <img src="https://media.giphy.com/media/ilRltVUHwX18lnOPMM/giphy.gif?cid=ecf05e478xcf5kl7v7clt8hqrp06cfs6xdsyspb824fn00ln&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="50" height="50"> Modul 10 (Enumerasi dan Structure)  
 ---
-### <img src="https://media.giphy.com/media/0bW6yseaFOR0i4evMs/giphy.gif" width="50" height="50"> Modul 11 (Algoritma, Pemograman dan IDE)  
+### <img src="https://media.giphy.com/media/0bW6yseaFOR0i4evMs/giphy.gif" width="50" height="50"> Modul 11 (File Handling in C)  
 
 
 
