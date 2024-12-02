@@ -25,18 +25,37 @@ Mata Kuliah: Algoritma Permograman
 <img align="right" src="https://media.giphy.com/media/k62wKQNmw3YwjJJJvH/giphy.gif?cid=ecf05e47nc02hwlymwukvivk7xw5hjfhtrm11m5pgb60obe2&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="250" />
 
 
-just a random text
+**1. Tujuan Pembelajaran**
 
-(Left till here away at to whom past. Feelings laughing at no wondered repeated provided finished. It acceptance thoroughly my advantages everything as. Are projecting inquietude affronting preference saw who. Marry of am do avoid ample as. Old disposal followed she ignorant desirous two has. Called played entire roused though for one too. He into walk roof made tall cold he. Feelings way likewise addition wandered contempt bed indulged.
+   - Mampu memahami, menjelaskan, mengaplikasikan algoritma melalui pemrograman.
+   - Mempu memahami cara instalasi, fungsi dan penggunaan IDE.
+   - Mampu membuat, mengkompilasi, menganalisis kesalahan dalam pemrograman menggunakan IDE.
 
-Wrote water woman of heart it total other. By in entirely securing suitable graceful at families improved. Zealously few furniture repulsive was agreeable consisted difficult. Collected breakfast estimable questions in to favourite it. Known he place worth words it as to. Spoke now noise off smart her ready.
+**2. Uraian Materi**
 
-Prepared do an dissuade be so whatever steepest. Yet her beyond looked either day wished nay. By doubtful disposed do juvenile an. Now curiosity you explained immediate why behaviour. An dispatched impossible of of melancholy favourable. Our quiet not heart along scale sense timed. Consider may dwelling old him her surprise finished families graceful. Gave led past poor met fine was new.
+   1. Pengantar Algoritma.
+      - Algoritma adalah urutan langkah-langkah yang disusun secara sistematis dan logis untuk menyelesaikan suatu masalah dalam mencapai suatu tujuan tertentu.          Sebuah algoritma haruslah memiliki awal dan akhir, selain itu algoritma memiliki 6 ciri penting yang meliputinya, yaitu: terbatas, tidak ambigu, input,           output, masuk akal, dan terstruktur.
+  
+   2. Pemograman
+      - Pemrograman diartikan sebagai tindakan atau aktivitas penulisan, menguji, memperbaiki, dan memelihara kode yang dipahami oleh komputer. Pemrograman               adalah proses penulisan kode menjadi sebuah program. Pemrograman adalah suatu seni dalam menggunakan satu atau lebih algoritme yang saling berhubungan            dengan menggunakan suatu bahasa pemrograman tertentu sehingga menjadi suatu program komputer.
 
-Among going manor who did. Do ye is celebrated it sympathize considered. May ecstatic did surprise elegance the ignorant age. Own her miss cold last. It so numerous if he outlived disposal. How but sons mrs lady when. Her especially are unpleasant out alteration continuing unreserved resolution. Hence hopes noisy may china fully and. Am it regard stairs branch thirty length afford.
+   3. Perbedaan Coding dan Programming
+      - Coding merupakan sebuah aktivitas atau proses untuk menuliskan kode yang harus sesuai dengan aturan penulisan (syntax) tertentu dari bahasa pemrograman           yang digunakan. sedangkan programming adalah sebuah proses merancang dan membangun program komputer untuk mencapai hasil tertentu.
+  
+   4. Bahasa Pemrograman
+      - Bahasa Pemrograman adalah instruksi standar untuk meminta sebuah komputer untuk menjalankan suatu fungsi tertentu. Bahasa pemrograman merupakan kumpulan          aturan sintaks dan semantik yang dipakai untuk mendefinisikan program komputer.
 
-Suppose end get boy warrant general natural. Delightful met sufficient projection ask. Decisively everything principles if preference do impression of. Preserved oh so difficult repulsive on in household. In what do miss time be. Valley as be appear cannot so by. Convinced resembled dependent remainder led zealously his shy own belonging. Always length letter adieus add number moment she. Promise few compass six several old offices removal parties fat. Concluded rapturous it intention perfectly daughters is as.)
+   5. Pengenalan Bahasa C
+      - Bahasa pemrograman C adalah bahasa pemrograman yang dibuat oleh Dennis Ritchie pada tahun 1969–1973 di Bell Labs. Awal mula kemunculan bahasa pemrograman         C dimulai saat pengembangan sistem operasi Unix oleh Dennis Ritchie dan Ken Thompson. Waktu itu sistem oeprasi Unix masih menggunakan bahasa assembly             pada komputer PDP-7. Awalnya Ken Thompson mencoba membuat compiler untuk bahasa Fortan, akan tetapi tidak berhasil. kemudian ia membuat bahasa B yang             merupakan bentuk sederhana dari BPCL. Pada tahun 1927, Denis Ritchie meningkatkan bahasa pemograman B menjadi bahasa pemograman baru yaitu bahasa                 pemograman C karna dianggap lambat dan tak banyak yang menggunakannya.
 
+  6. Integrated Development Environment (IDE)
+     - IDE atau Integrated Development Environment adalah software atau perangkat lunak yang digunakan oleh programmer untuk membuat sebuah program komputeratau         sebagai tempat pengembangan aplikasi. Contohnya adalah DevC++, Microsoft Visual Studio, CodeBlocks, NetBeans, Eclips, dll.
+
+**3. Aktivitas dan Latihan**
+1. Melakukan Instalasi IDE
+2. Membuat Program untuk mecetak "Hello World!"
+3. Menjalankan Program menggunakan CMD dan IDE.
+4. Menjelaskan mengenai setiap baris yang ditampilkan.
 
 
 ### <img src="https://media.giphy.com/media/IOaLEhOlGiuwDRqgul/giphy.gif" width="50" height="50"> Modul 2 (Pemograman Dasar C)  
