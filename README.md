@@ -124,8 +124,63 @@ Mata Kuliah: Algoritma Permograman
 
 
 **1. Tujuan Pembelajaran**
-**2. Uraian Materi**
+- Mampu menjelaskan dan mengimplementasikan Operator dalam pemrograman menggunakan IDE.
 
+**2. Uraian Materi**
+1. pengertian Operator
+   - Operator adalah simbol atau karakter khusus yang digunakn untuk melakukan operasi matematis atau logiss pada data. Dalam permograman operator  merupakan dasar umtuk melakukan berbagai tugas dan manipulasi data. Berdasarkan jumlah operand-nya, operator dibagi menjadi 3 jenis
+     - Operator Unary, mempunyai 1 operand
+     - Operator Binary, mempunyai 2 operand
+     - Operator Ternary, mempunyai 3 operand
+       > Operand adalah nilai asal yang dipakai dalam sebuah proses operasi.
+
+2. Operator Aritmatika
+   - Operator aritmatika adalah operator yang digunakan untuk operasi matematika, yaitu seperti `penjumlahan (+)`, `pengurangan (-)`, `perkalian (*)`, `pembagian (/)` dan `sisa bagi (%)`
+
+3. Opperator Penugasan
+   - Operator penugasan (Assignment Operator) merupakan operator untuk memberikan tugas pada variabel. Biasanya untuk mengisi nilai, yaitu seperti:
+     - Pengisian Nilai `(=)`
+     - Pengisian dan Penambahan `(+=)`
+     - Pengisian dan Pengurangan `(-=)`
+     - Pengisian dan Perkalian `(*=)`
+     - Pengisian dan Pembagian `(/=)`
+     - Pengisian dan Sisa bagi `(%=)`
+     - Pengisian dan shift left `(<<=)`
+     - Pengisian dan shift right `(>>=)`
+     - Pengisian dan bitwise AND `(&=)`
+     - Pengisian dan bitwise OR `(|=)`
+     - Pengisian dan bitwise XOR `(^=)`
+       
+4. Operator Pembanding
+   - Operator pembanding adalah operator untuk memabndingkan dua buah nilai. Operator ini juga dikenal dengan operator relasi, yaitu seperti:
+     - Lebih Besar `(>)`
+     - Lebih Kecil `(<)`
+     - Sama Dengan `(==)`
+     - Tidak Sama denga `(!=)`
+     - Lebih Besar Sama dengan `(>=)`
+     - Lebih Kecil Sama dengan `(<=)`
+   
+5. Operator Logika
+   - Opertaor logika adalah simbol yang digunakan dalam logika untuk menghubungkan rumus-rumus logika, yaitu seperti:
+     - logika AND `(&&)`
+     - logika OR `(||)`
+     - negasi/kebalikan `(!)`
+
+6. Operator Bitwise
+   - Operator bitwise merupkan operator yang digunakan untuk operasi berdasarkan bit (biner) dari sebuah nilai, yaitu seperti:
+     - AND `(&)`
+     - OR `(|)`
+     - XOR `(^)`
+     - NOT `(~)`
+     - Left shift `(<<)`
+     - Right shift `(>>)`
+
+7. Operator Lain-lain
+   - Alamat memori `(&)` (untuk mengambil alamat memori)
+   - Pointer `(*)` (untuk membuat pointer)
+   - Ternary `(?:)` (untuk membuat kondisi)
+   - Increment `(++)` (untuk menambah 1)
+   - Decrement `(--)` (untuk mengurangi 1)
 
 
 # <img src="https://media.giphy.com/media/FRPRLVXkKp5Xuqs2eK/giphy.gif?cid=ecf05e47q5vz7rij0nuuk717fxigne54an20rqysgacm6adc&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="50" height="50"> Modul 5 (Flow Control - Decision Making)  
