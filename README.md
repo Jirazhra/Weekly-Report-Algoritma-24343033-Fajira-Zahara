@@ -25,7 +25,7 @@ Mata Kuliah: Algoritma Permograman
 <img align="right" src="https://media.giphy.com/media/k62wKQNmw3YwjJJJvH/giphy.gif?cid=ecf05e47nc02hwlymwukvivk7xw5hjfhtrm11m5pgb60obe2&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="250" />
 
 
-**1. Tujuan Pembelajaran**
+**1. Tujuan Pembelajaran** 
    - Mampu memahami, menjelaskan, mengaplikasikan algoritma melalui pemrograman.
    - Mempu memahami cara instalasi, fungsi dan penggunaan IDE.
    - Mampu membuat, mengkompilasi, menganalisis kesalahan dalam pemrograman menggunakan IDE.
@@ -94,36 +94,37 @@ Mata Kuliah: Algoritma Permograman
 <img align="right" src="https://media.giphy.com/media/cOhNvklPX1Eldwhk7k/giphy.gif?cid=ecf05e47ojcuks7gzvb6laaha3243m4ya7b0svj19zaqd1z8&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="350" />
 
 
-just a random text
+**1. Tujuan Pembelajaran**
+- Mampu menjelaskan dan mengimplementasikan Variables, Constanta, Data Types, Type Casting, Keywords dalam pemrograman menggunakan IDE.
 
-(Left till here away at to whom past. Feelings laughing at no wondered repeated provided finished. It acceptance thoroughly my advantages everything as. Are projecting inquietude affronting preference saw who. Marry of am do avoid ample as. Old disposal followed she ignorant desirous two has. Called played entire roused though for one too. He into walk roof made tall cold he. Feelings way likewise addition wandered contempt bed indulged.
+**2. Uraian Materi**
+1. Variabel
+   - Variabel adalah sebuah tempat menyimpan sebuah nilai. Aturan dalam penulisan variabel seperti berikut:
+     - Nama variabel tidak boleh didahului dengan simbol dan angka.
+     - Nama variabel tidak boleh menggunakan kata kunci yang sudah ada pada bahasa C.
+     - Nama variabel bersifat case sensitive, artinya huruf besar dan kecil dibedakan.
+     - Disarankan menggunakan underscore untuk nama variabel yang terdiri dari dua suku kata.
 
-Wrote water woman of heart it total other. By in entirely securing suitable graceful at families improved. Zealously few furniture repulsive was agreeable consisted difficult. Collected breakfast estimable questions in to favourite it. Known he place worth words it as to. Spoke now noise off smart her ready.
-
-Prepared do an dissuade be so whatever steepest. Yet her beyond looked either day wished nay. By doubtful disposed do juvenile an. Now curiosity you explained immediate why behaviour. An dispatched impossible of of melancholy favourable. Our quiet not heart along scale sense timed. Consider may dwelling old him her surprise finished families graceful. Gave led past poor met fine was new.
-
-Among going manor who did. Do ye is celebrated it sympathize considered. May ecstatic did surprise elegance the ignorant age. Own her miss cold last. It so numerous if he outlived disposal. How but sons mrs lady when. Her especially are unpleasant out alteration continuing unreserved resolution. Hence hopes noisy may china fully and. Am it regard stairs branch thirty length afford.
-
-Suppose end get boy warrant general natural. Delightful met sufficient projection ask. Decisively everything principles if preference do impression of. Preserved oh so difficult repulsive on in household. In what do miss time be. Valley as be appear cannot so by. Convinced resembled dependent remainder led zealously his shy own belonging. Always length letter adieus add number moment she. Promise few compass six several old offices removal parties fat. Concluded rapturous it intention perfectly daughters is as.)
-
-
-
+2. Tipe Data
+   - Tipe data atau kadang disingkat dengan ‘tipe’ saja adalah sebuah pengelompokan data untuk memberitahu compiler atau interpreter bagaimana programmer ingin mengolah data tersebut.
+     - tipe data dasar: yaitu tipe data yang paling dasar dalam bahasa c. Contohnya `char`, `int`, `float`, dan `double`.
+     - tipe data void: yaitu tipe data khusus untuk menyatakan tidak ada data.
+     - tipe data enum: yaitu jenis tipe data yang didefinisikan dalam bahasa pemrograman untuk mewakili suatu nilai.
+     - tipe data turunan: tipe data yang berasal dari tipe data utama. Contohnya `arr`, `sruct`, dan `ptr`.
+       
+3. Konstanta
+   - konstanta adalah sebuah nilai tetapan, atau sebuah variabel yang tidak bisa diubah nilainya. Ada dua cara pembuatan konstanta dalam c, yaitu:
+     - menggunakan `#define`
+     - menggunakan `const`
+       > perbedaan dari keduanya adalah #define tidak perlu menuliskan tipe data, sedangkan const harus. Pada #define tidak membutuhkan titik koma di akhir, sedangkan pada const kita harus menuliskan titik koma. Posisi penulisan untuk #define dan const bisa ditulis di dalam main() maupun di luar.
+       
 # <img src="https://media.giphy.com/media/fogCm9SiQeL6ucIHCy/giphy.gif?cid=ecf05e47yxlu2labhqob8lu316qup3na2gmwaxe2t7ajzc5p&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="50" height="50"> Modul 4 (Operator)  
 
 <img align="right" src="https://media.giphy.com/media/Yfl7CS7vQqnebA69aH/giphy.gif?cid=ecf05e47ix2mb0sf0lcbyqp9nxz16i6vf0k6nvt1aq6ftwau&ep=v1_gifs_related&rid=giphy.gif&ct=g" width="250" />
 
 
-just a random text
-
-(Left till here away at to whom past. Feelings laughing at no wondered repeated provided finished. It acceptance thoroughly my advantages everything as. Are projecting inquietude affronting preference saw who. Marry of am do avoid ample as. Old disposal followed she ignorant desirous two has. Called played entire roused though for one too. He into walk roof made tall cold he. Feelings way likewise addition wandered contempt bed indulged.
-
-Wrote water woman of heart it total other. By in entirely securing suitable graceful at families improved. Zealously few furniture repulsive was agreeable consisted difficult. Collected breakfast estimable questions in to favourite it. Known he place worth words it as to. Spoke now noise off smart her ready.
-
-Prepared do an dissuade be so whatever steepest. Yet her beyond looked either day wished nay. By doubtful disposed do juvenile an. Now curiosity you explained immediate why behaviour. An dispatched impossible of of melancholy favourable. Our quiet not heart along scale sense timed. Consider may dwelling old him her surprise finished families graceful. Gave led past poor met fine was new.
-
-Among going manor who did. Do ye is celebrated it sympathize considered. May ecstatic did surprise elegance the ignorant age. Own her miss cold last. It so numerous if he outlived disposal. How but sons mrs lady when. Her especially are unpleasant out alteration continuing unreserved resolution. Hence hopes noisy may china fully and. Am it regard stairs branch thirty length afford.
-
-Suppose end get boy warrant general natural. Delightful met sufficient projection ask. Decisively everything principles if preference do impression of. Preserved oh so difficult repulsive on in household. In what do miss time be. Valley as be appear cannot so by. Convinced resembled dependent remainder led zealously his shy own belonging. Always length letter adieus add number moment she. Promise few compass six several old offices removal parties fat. Concluded rapturous it intention perfectly daughters is as.)
+**1. Tujuan Pembelajaran**
+**2. Uraian Materi**
 
 
 
@@ -131,18 +132,8 @@ Suppose end get boy warrant general natural. Delightful met sufficient projectio
 
 <img align="right" src="https://media.giphy.com/media/2H67VmB5UEBmU/giphy.gif?cid=ecf05e47o0e9igu81gicys9uaoeqwy4241a2ryhenntpsk5g&ep=v1_gifs_related&rid=giphy.gif&ct=g" width="350" />
 
-just a random text
-
-(Left till here away at to whom past. Feelings laughing at no wondered repeated provided finished. It acceptance thoroughly my advantages everything as. Are projecting inquietude affronting preference saw who. Marry of am do avoid ample as. Old disposal followed she ignorant desirous two has. Called played entire roused though for one too. He into walk roof made tall cold he. Feelings way likewise addition wandered contempt bed indulged.
-
-Wrote water woman of heart it total other. By in entirely securing suitable graceful at families improved. Zealously few furniture repulsive was agreeable consisted difficult. Collected breakfast estimable questions in to favourite it. Known he place worth words it as to. Spoke now noise off smart her ready.
-
-Prepared do an dissuade be so whatever steepest. Yet her beyond looked either day wished nay. By doubtful disposed do juvenile an. Now curiosity you explained immediate why behaviour. An dispatched impossible of of melancholy favourable. Our quiet not heart along scale sense timed. Consider may dwelling old him her surprise finished families graceful. Gave led past poor met fine was new.
-
-Among going manor who did. Do ye is celebrated it sympathize considered. May ecstatic did surprise elegance the ignorant age. Own her miss cold last. It so numerous if he outlived disposal. How but sons mrs lady when. Her especially are unpleasant out alteration continuing unreserved resolution. Hence hopes noisy may china fully and. Am it regard stairs branch thirty length afford.
-
-Suppose end get boy warrant general natural. Delightful met sufficient projection ask. Decisively everything principles if preference do impression of. Preserved oh so difficult repulsive on in household. In what do miss time be. Valley as be appear cannot so by. Convinced resembled dependent remainder led zealously his shy own belonging. Always length letter adieus add number moment she. Promise few compass six several old offices removal parties fat. Concluded rapturous it intention perfectly daughters is as.)
-
+**1. Tujuan Pembelajaran**
+**2. Uraian Materi**
 
 
 # <img src="https://media.giphy.com/media/dbDbUCnK9QBDg3Yor3/giphy.gif" width="50" height="50"> Modul 6 (Flow Control - Looping)  
@@ -150,18 +141,8 @@ Suppose end get boy warrant general natural. Delightful met sufficient projectio
 <img align="right" src="https://media.giphy.com/media/wJN9LnMo8VPuNiFCOo/giphy.gif?cid=ecf05e47iwylxx1a1dsbmc2psjwhmnnjoevpqkv5g8mhjazn&ep=v1_gifs_search&rid=giphy.gif&ct=g" width="250" />
 
 
-just a random text
-
-(Left till here away at to whom past. Feelings laughing at no wondered repeated provided finished. It acceptance thoroughly my advantages everything as. Are projecting inquietude affronting preference saw who. Marry of am do avoid ample as. Old disposal followed she ignorant desirous two has. Called played entire roused though for one too. He into walk roof made tall cold he. Feelings way likewise addition wandered contempt bed indulged.
-
-Wrote water woman of heart it total other. By in entirely securing suitable graceful at families improved. Zealously few furniture repulsive was agreeable consisted difficult. Collected breakfast estimable questions in to favourite it. Known he place worth words it as to. Spoke now noise off smart her ready.
-
-Prepared do an dissuade be so whatever steepest. Yet her beyond looked either day wished nay. By doubtful disposed do juvenile an. Now curiosity you explained immediate why behaviour. An dispatched impossible of of melancholy favourable. Our quiet not heart along scale sense timed. Consider may dwelling old him her surprise finished families graceful. Gave led past poor met fine was new.
-
-Among going manor who did. Do ye is celebrated it sympathize considered. May ecstatic did surprise elegance the ignorant age. Own her miss cold last. It so numerous if he outlived disposal. How but sons mrs lady when. Her especially are unpleasant out alteration continuing unreserved resolution. Hence hopes noisy may china fully and. Am it regard stairs branch thirty length afford.
-
-Suppose end get boy warrant general natural. Delightful met sufficient projection ask. Decisively everything principles if preference do impression of. Preserved oh so difficult repulsive on in household. In what do miss time be. Valley as be appear cannot so by. Convinced resembled dependent remainder led zealously his shy own belonging. Always length letter adieus add number moment she. Promise few compass six several old offices removal parties fat. Concluded rapturous it intention perfectly daughters is as.)
-
+**1. Tujuan Pembelajaran**
+**2. Uraian Materi**
 
 
 # <img src="https://media.giphy.com/media/ggpoVsIg0LwtHfTBEY/giphy.gif" width="50" height="50"> Modul 7 (Array)  
@@ -169,18 +150,8 @@ Suppose end get boy warrant general natural. Delightful met sufficient projectio
 <img align="right" src="https://media.giphy.com/media/Roq7iuYrLeJIKFtlfQ/giphy.gif?cid=ecf05e477gt8nrvlv6608d4xghw09d2w03wavfskmcrag930&ep=v1_gifs_related&rid=giphy.gif&ct=g" width="280" />
 
 
-just a random text
-
-(Left till here away at to whom past. Feelings laughing at no wondered repeated provided finished. It acceptance thoroughly my advantages everything as. Are projecting inquietude affronting preference saw who. Marry of am do avoid ample as. Old disposal followed she ignorant desirous two has. Called played entire roused though for one too. He into walk roof made tall cold he. Feelings way likewise addition wandered contempt bed indulged.
-
-Wrote water woman of heart it total other. By in entirely securing suitable graceful at families improved. Zealously few furniture repulsive was agreeable consisted difficult. Collected breakfast estimable questions in to favourite it. Known he place worth words it as to. Spoke now noise off smart her ready.
-
-Prepared do an dissuade be so whatever steepest. Yet her beyond looked either day wished nay. By doubtful disposed do juvenile an. Now curiosity you explained immediate why behaviour. An dispatched impossible of of melancholy favourable. Our quiet not heart along scale sense timed. Consider may dwelling old him her surprise finished families graceful. Gave led past poor met fine was new.
-
-Among going manor who did. Do ye is celebrated it sympathize considered. May ecstatic did surprise elegance the ignorant age. Own her miss cold last. It so numerous if he outlived disposal. How but sons mrs lady when. Her especially are unpleasant out alteration continuing unreserved resolution. Hence hopes noisy may china fully and. Am it regard stairs branch thirty length afford.
-
-Suppose end get boy warrant general natural. Delightful met sufficient projection ask. Decisively everything principles if preference do impression of. Preserved oh so difficult repulsive on in household. In what do miss time be. Valley as be appear cannot so by. Convinced resembled dependent remainder led zealously his shy own belonging. Always length letter adieus add number moment she. Promise few compass six several old offices removal parties fat. Concluded rapturous it intention perfectly daughters is as.)
-
+**1. Tujuan Pembelajaran**
+**2. Uraian Materi**
 
 
 # <img src="https://media.giphy.com/media/zIN8NHSfum1NkCkNgI/giphy.gif?cid=ecf05e478xcf5kl7v7clt8hqrp06cfs6xdsyspb824fn00ln&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="50" height="50"> Modul 8 (Fungsi dan Prosedur)  
@@ -188,18 +159,8 @@ Suppose end get boy warrant general natural. Delightful met sufficient projectio
 <img align="right" src="https://media.giphy.com/media/2F3NOFXlJcTX2rBHhB/giphy.gif?cid=ecf05e47vtk087bkqxgt6b37r25az4jb3a7r7tnbrpjmjj5q&ep=v1_gifs_related&rid=giphy.gif&ct=g" width="280" />
 
 
-just a random text
-
-(Left till here away at to whom past. Feelings laughing at no wondered repeated provided finished. It acceptance thoroughly my advantages everything as. Are projecting inquietude affronting preference saw who. Marry of am do avoid ample as. Old disposal followed she ignorant desirous two has. Called played entire roused though for one too. He into walk roof made tall cold he. Feelings way likewise addition wandered contempt bed indulged.
-
-Wrote water woman of heart it total other. By in entirely securing suitable graceful at families improved. Zealously few furniture repulsive was agreeable consisted difficult. Collected breakfast estimable questions in to favourite it. Known he place worth words it as to. Spoke now noise off smart her ready.
-
-Prepared do an dissuade be so whatever steepest. Yet her beyond looked either day wished nay. By doubtful disposed do juvenile an. Now curiosity you explained immediate why behaviour. An dispatched impossible of of melancholy favourable. Our quiet not heart along scale sense timed. Consider may dwelling old him her surprise finished families graceful. Gave led past poor met fine was new.
-
-Among going manor who did. Do ye is celebrated it sympathize considered. May ecstatic did surprise elegance the ignorant age. Own her miss cold last. It so numerous if he outlived disposal. How but sons mrs lady when. Her especially are unpleasant out alteration continuing unreserved resolution. Hence hopes noisy may china fully and. Am it regard stairs branch thirty length afford.
-
-Suppose end get boy warrant general natural. Delightful met sufficient projection ask. Decisively everything principles if preference do impression of. Preserved oh so difficult repulsive on in household. In what do miss time be. Valley as be appear cannot so by. Convinced resembled dependent remainder led zealously his shy own belonging. Always length letter adieus add number moment she. Promise few compass six several old offices removal parties fat. Concluded rapturous it intention perfectly daughters is as.)
-
+**1. Tujuan Pembelajaran**
+**2. Uraian Materi**
 
 
 # <img src="https://media.giphy.com/media/6rNcvmYFRmK3mfm0Ot/giphy.gif?cid=ecf05e47yxlu2labhqob8lu316qup3na2gmwaxe2t7ajzc5p&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="50" height="50"> Modul 9 (Pointer)  
@@ -207,17 +168,8 @@ Suppose end get boy warrant general natural. Delightful met sufficient projectio
 <img align="right" src="https://media.giphy.com/media/Jq6XWnYR82RWOPoIre/giphy.gif?cid=ecf05e47lgmqif5xj83gstc921gguxqpq82i9xncttn1uzl9&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="250" />
 
 
-just a random text
-
-(Left till here away at to whom past. Feelings laughing at no wondered repeated provided finished. It acceptance thoroughly my advantages everything as. Are projecting inquietude affronting preference saw who. Marry of am do avoid ample as. Old disposal followed she ignorant desirous two has. Called played entire roused though for one too. He into walk roof made tall cold he. Feelings way likewise addition wandered contempt bed indulged.
-
-Wrote water woman of heart it total other. By in entirely securing suitable graceful at families improved. Zealously few furniture repulsive was agreeable consisted difficult. Collected breakfast estimable questions in to favourite it. Known he place worth words it as to. Spoke now noise off smart her ready.
-
-Prepared do an dissuade be so whatever steepest. Yet her beyond looked either day wished nay. By doubtful disposed do juvenile an. Now curiosity you explained immediate why behaviour. An dispatched impossible of of melancholy favourable. Our quiet not heart along scale sense timed. Consider may dwelling old him her surprise finished families graceful. Gave led past poor met fine was new.
-
-Among going manor who did. Do ye is celebrated it sympathize considered. May ecstatic did surprise elegance the ignorant age. Own her miss cold last. It so numerous if he outlived disposal. How but sons mrs lady when. Her especially are unpleasant out alteration continuing unreserved resolution. Hence hopes noisy may china fully and. Am it regard stairs branch thirty length afford.
-
-Suppose end get boy warrant general natural. Delightful met sufficient projection ask. Decisively everything principles if preference do impression of. Preserved oh so difficult repulsive on in household. In what do miss time be. Valley as be appear cannot so by. Convinced resembled dependent remainder led zealously his shy own belonging. Always length letter adieus add number moment she. Promise few compass six several old offices removal parties fat. Concluded rapturous it intention perfectly daughters is as.)
+**1. Tujuan Pembelajaran**
+**2. Uraian Materi**
 
 
 
@@ -226,17 +178,8 @@ Suppose end get boy warrant general natural. Delightful met sufficient projectio
 <img align="right" src="https://media.giphy.com/media/3o7btZPAFrektzbVok/giphy.gif?cid=ecf05e47lgmqif5xj83gstc921gguxqpq82i9xncttn1uzl9&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="250" />
 
 
-just a random text
-
-(Left till here away at to whom past. Feelings laughing at no wondered repeated provided finished. It acceptance thoroughly my advantages everything as. Are projecting inquietude affronting preference saw who. Marry of am do avoid ample as. Old disposal followed she ignorant desirous two has. Called played entire roused though for one too. He into walk roof made tall cold he. Feelings way likewise addition wandered contempt bed indulged.
-
-Wrote water woman of heart it total other. By in entirely securing suitable graceful at families improved. Zealously few furniture repulsive was agreeable consisted difficult. Collected breakfast estimable questions in to favourite it. Known he place worth words it as to. Spoke now noise off smart her ready.
-
-Prepared do an dissuade be so whatever steepest. Yet her beyond looked either day wished nay. By doubtful disposed do juvenile an. Now curiosity you explained immediate why behaviour. An dispatched impossible of of melancholy favourable. Our quiet not heart along scale sense timed. Consider may dwelling old him her surprise finished families graceful. Gave led past poor met fine was new.
-
-Among going manor who did. Do ye is celebrated it sympathize considered. May ecstatic did surprise elegance the ignorant age. Own her miss cold last. It so numerous if he outlived disposal. How but sons mrs lady when. Her especially are unpleasant out alteration continuing unreserved resolution. Hence hopes noisy may china fully and. Am it regard stairs branch thirty length afford.
-
-Suppose end get boy warrant general natural. Delightful met sufficient projection ask. Decisively everything principles if preference do impression of. Preserved oh so difficult repulsive on in household. In what do miss time be. Valley as be appear cannot so by. Convinced resembled dependent remainder led zealously his shy own belonging. Always length letter adieus add number moment she. Promise few compass six several old offices removal parties fat. Concluded rapturous it intention perfectly daughters is as.)
+**1. Tujuan Pembelajaran**
+**2. Uraian Materi**
 
 
 
@@ -245,17 +188,8 @@ Suppose end get boy warrant general natural. Delightful met sufficient projectio
 <img align="right" src="https://media.giphy.com/media/H4bPAz0SakfPEMV8Dk/giphy.gif?cid=ecf05e479fqy71vm0xxrrino1d1zuamutdn6tfcwybb01tod&ep=v1_gifs_search&rid=giphy.gif&ct=g" width="350" />
 
 
-just a random text
-
-(Left till here away at to whom past. Feelings laughing at no wondered repeated provided finished. It acceptance thoroughly my advantages everything as. Are projecting inquietude affronting preference saw who. Marry of am do avoid ample as. Old disposal followed she ignorant desirous two has. Called played entire roused though for one too. He into walk roof made tall cold he. Feelings way likewise addition wandered contempt bed indulged.
-
-Wrote water woman of heart it total other. By in entirely securing suitable graceful at families improved. Zealously few furniture repulsive was agreeable consisted difficult. Collected breakfast estimable questions in to favourite it. Known he place worth words it as to. Spoke now noise off smart her ready.
-
-Prepared do an dissuade be so whatever steepest. Yet her beyond looked either day wished nay. By doubtful disposed do juvenile an. Now curiosity you explained immediate why behaviour. An dispatched impossible of of melancholy favourable. Our quiet not heart along scale sense timed. Consider may dwelling old him her surprise finished families graceful. Gave led past poor met fine was new.
-
-Among going manor who did. Do ye is celebrated it sympathize considered. May ecstatic did surprise elegance the ignorant age. Own her miss cold last. It so numerous if he outlived disposal. How but sons mrs lady when. Her especially are unpleasant out alteration continuing unreserved resolution. Hence hopes noisy may china fully and. Am it regard stairs branch thirty length afford.
-
-Suppose end get boy warrant general natural. Delightful met sufficient projection ask. Decisively everything principles if preference do impression of. Preserved oh so difficult repulsive on in household. In what do miss time be. Valley as be appear cannot so by. Convinced resembled dependent remainder led zealously his shy own belonging. Always length letter adieus add number moment she. Promise few compass six several old offices removal parties fat. Concluded rapturous it intention perfectly daughters is as.)
+**1. Tujuan Pembelajaran**
+**2. Uraian Materi**
 
 
 
