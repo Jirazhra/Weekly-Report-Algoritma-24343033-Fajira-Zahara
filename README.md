@@ -188,7 +188,14 @@ Mata Kuliah: Algoritma Permograman
 <img align="right" src="https://media.giphy.com/media/2H67VmB5UEBmU/giphy.gif?cid=ecf05e47o0e9igu81gicys9uaoeqwy4241a2ryhenntpsk5g&ep=v1_gifs_related&rid=giphy.gif&ct=g" width="350" />
 
 **1. Tujuan Pembelajaran**
+- Mampu menjelaskan dan mengimplementasikan Flow Control: Pengambilan Keputusan dalam pemrograman menggunakan IDE.
+
 **2. Uraian Materi**
+1. Decision making
+   - proses pengambilan keputusan dalam pemrograman yang menggunakan percabangan if then else statement. Percabangan ini digunakan untuk menguji syarat kondisi tertentu pada program
+
+2. If
+
 
 
 # <img src="https://media.giphy.com/media/dbDbUCnK9QBDg3Yor3/giphy.gif" width="50" height="50"> Modul 6 (Flow Control - Looping)  
