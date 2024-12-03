@@ -285,6 +285,22 @@ Mata Kuliah: Algoritma Permograman
    - Cara mendeklarasikan array multidimensi adalah:
       - `Array dua dimensi: tipedata[][] namavar = new tipedata[jumlahKolom][jumlahBaris]`
       - `Array tiga dimensi: int[][][] matriks3Dimensi = new int`
+
+3. String
+   - String dalam bahasa C adalah kumpulan karakter yang direpresentasikan sebagai array of char yang diakhiri dengan karakter null.String merupakan bentuk data yang biasa dipakai dalam bahasa pemrograman untuk keperluan menampung dan memanipulasi data teks. Karena string dibentuk dari array of `char`, maka panjang string bisa tak terbatas.
+     - `strcpy()`: Fungsi ini digunakan untuk mengkopi string pada variabel 2 ke variabel 1.
+
+                      strcpy(s1,s2);
+     - `strcat()`: Fungsi ini digunakan untuk menambahkan string dari belakang.
+
+                      strcat(s1, s2);
+     - `strlen()`: Fungsi ini digunakan untuk menghitung panjang string.
+
+                      strlen(s1);
+     - `strcmp()`: Fungsi strcmp() digunakan untuk membandingkan string dengan string yang lainnya.
+
+                      strcmp(s1, s2);
+     
    
 # <img src="https://media.giphy.com/media/zIN8NHSfum1NkCkNgI/giphy.gif?cid=ecf05e478xcf5kl7v7clt8hqrp06cfs6xdsyspb824fn00ln&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="50" height="50"> Modul 8 (Fungsi dan Prosedur)  
 
