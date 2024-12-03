@@ -264,19 +264,21 @@ Mata Kuliah: Algoritma Permograman
      - Pengambilan panjang array mengguakan fungsi `sizeof()`, dengan membagi ukuran total array dengan ukuran satu elemen.
      - Contoh program menghitung rata-rata dengan menggunakan array:
 
-          #include <stdio.h>
-            void main() {
-               int tinggi_badan[10] = {175, 165, 166, 157, 184, 156, 163, 176, 171, 169};  // membuat array dari tinggi badan
-               int length = sizeof(tinggi_badan) / sizeof(*tinggi_badan);
-               int sum = 0;
-       
-               for(int i = 0; i < length; i++){
-                   sum += tinggi_badan[i];
-               }
 
-               float rata_rata = (float)sum / (float)length;
-               printf("Rata-rata tinggi badan: %.2f\n", rata_rata);
-            }
+            #include <stdio.h>
+
+             void main() {
+                int tinggi_badan[10] = {175, 165, 166, 157, 184, 156, 163, 176, 171, 169};  // membuat array dari tinggi badan
+                int length = sizeof(tinggi_badan) / sizeof(*tinggi_badan);
+                int sum = 0;
+
+                for(int i = 0; i < length; i++){
+                   sum += tinggi_badan[i];
+                }
+
+                float rata_rata = (float)sum / (float)length;
+                printf("Rata-rata tinggi badan: %.2f\n", rata_rata);
+             }
 
 # <img src="https://media.giphy.com/media/zIN8NHSfum1NkCkNgI/giphy.gif?cid=ecf05e478xcf5kl7v7clt8hqrp06cfs6xdsyspb824fn00ln&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="50" height="50"> Modul 8 (Fungsi dan Prosedur)  
 
