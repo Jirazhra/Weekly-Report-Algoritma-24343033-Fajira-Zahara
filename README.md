@@ -219,6 +219,8 @@ Mata Kuliah: Algoritma Permograman
 
 
 **1. Tujuan Pembelajaran**
+- Mampu menjelaskan dan mengimplementasikan Looping: Perulangan dalam pemrograman menggunakan IDE.
+
 **2. Uraian Materi**
 
 
