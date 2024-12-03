@@ -406,7 +406,7 @@ Mata Kuliah: Algoritma Permograman
 
 6. Pass by Value & Pass by Reference     
    - Pemanggilan dengan nilai (pass by value) adalah cara yang dipakai untuk seluruh fungsi buatan yang telah dibahas pada artikel sebelumnya. pada pass by value, nilai parameter aktual akan disalin ke parameter formal.
-    > contoh: `kali_dua(4);` ini disebut paass by value, karena membrikan nilai 4.
+     > contoh: `kali_dua(4);` ini disebut paass by value, karena membrikan nilai 4.
    - Pemanggilan dengan referensi (pass by reference) adalah upaya untuk melewatkan alamat dari suatu variabel ke dalamfungsi. Cara ini dipakaiuntuk mengubah isi suatu variabel di luar fungsi dengan pelaksanaan pengubahan dilakukan di dalam fungsi.
      > contoh: `kali_dua(&nama_variabel);` ini disebut pass by reference, karena memberikan alamat.
    - Contoh sederhana
