@@ -522,16 +522,105 @@ Mata Kuliah: Algoritma Permograman
 
 
 **1. Tujuan Pembelajaran**
+- Mampu menjelaskan dan mengimplementasikan Enum dan Structure dalam pemrograman menggunakan IDE.
+  
 **2. Uraian Materi**
+1. Pengertian Enumerasi
+   - `Enum` atau enumerasi adalah nama simbolis yang mewakili kumpulan nilai yang digunakan sebagai jenis data. Enumerasi dapat digunakan untuk membuat set konstanta yang dapat digunakan bersama variabel dan properti. Enumerasi dapat membuat kode lebih mudah dibaca dan jelas, terutama jika menggunakan nama yang bermakna.
+   -  Cara membuat enum : `enum nama_enum { const1, const2,...};`
+   -  Contoh:
+               enum level {EASY = 1, NORMAL = 2, HARD = 3};
+               enum sex {MALE, FEMALE};
+               enum state {PENDING, INPROGRESS, DONE};
+
+2. Membuat tipe data boolean dari enum
+   - Bahasa pemrograman C tidak memiliki tipe data boolean seperti bahasa pemrograman lain. Contoh program tipe data boolean:
+                 #include <stdio.h>
+            
+                 enum boolean {false, true};
+            
+                 void  main() {
+                    int a = 4;
+                    int b = 5;
+            
+                    if(a < b == true){
+                       printf("Variabel a lebih kecil dari b\n");
+                    }
+                 }
+   
+3. Pengertian Structure
+   - Struktur atau `struct` dalam bahasa pemrograman C adalah fitur yang memungkinkan pengembang untuk mengelompokkan beberapa variabel menjadi satu kesatuan. `Struct` merupakan tipe data bentukan yang berisi kumpulan variabel-variabel yang bernaung dalam satu nama yang sama.
+   
+ 4. Penggunaan struct
+    - struct dapat dibuat dengan kata kunci `struct` kemudian diikuti dengan nama struct lainnya. 
+    - contoh penulisan struct yaitu:
+              struct Mahasiswa { char nama; char nim; };
+              struct Mahasiswa{ char nama; char nim; double ipk; };
+
+5. Menggunakan `typdeaf` pada struct
+   - Kata kunci typedef adalah kata kunci untuk mendefinisikan tipe data baru. Contoh:
+                 // membuat struct dengan typdeaf
+                 typdeaf struct Distance{
+                       int feet;
+                       float inch;
+                 } distances;
+            
+                 void main(){
+                       // menggunakan struct
+                       distances dist1, dist2, sum;
+                 }
+6. struct bersarang
+   - Bersarang artinya ada struct di dalam struct. Contoh:
+                 struct complex
+                 {
+                    int imag;
+                    float real;
+                 };
+            
+                 struct number
+                 {
+                    struct complex comp;
+                    int integers;
+                 } num1, num2;
 
 
+7. Passing Struct ke dalam fungsi
+   - Struct dapat kita buat sebagai parameter untuk fungsi. Contoh:
+                    # include <stdio.h>
+                    struct student
+                    {
+                       char name[50];
+                       int agae;
+                    };
+               
+                    void main(){
+                       struct student s1;
+               
+                       printf("Enter name: ");
+                       scanf("%[^\n]%*c", s1.name);
+               
+                       printf("Enter age: ");
+                       scanf("%d", &s1.age);
+               
+                       display(s1); // passing structure as an argument
+                    }
+               
+                    // membuat fungsi dengan struct sebagai parameter
+                    void display(struct student s) {
+                       printf("\nDisplaying information");
+                       printf("Name: %s", s.name);
+                       printf("\nRoll: %d", s.age);
+                    }
 
+      
 # <img src="https://media.giphy.com/media/0bW6yseaFOR0i4evMs/giphy.gif" width="50" height="50"> Modul 11 (File Handling in C)  
 
 <img align="right" src="https://media.giphy.com/media/H4bPAz0SakfPEMV8Dk/giphy.gif?cid=ecf05e479fqy71vm0xxrrino1d1zuamutdn6tfcwybb01tod&ep=v1_gifs_search&rid=giphy.gif&ct=g" width="350" />
 
 
 **1. Tujuan Pembelajaran**
+- Mampu menjelaskan dan mengimplementasikan Write & Read dalam File dalam pemrograman menggunakan IDE.
+  
 **2. Uraian Materi**
 
 
