@@ -447,6 +447,7 @@ Mata Kuliah: Algoritma Permograman
 
 3. Pointer untuk mengakses data pada array
    - Pointer juga sering digunakan untuk mengakses data pada array. Contoh:
+
               #include <stdio.h>
 
               void main(){
@@ -529,12 +530,14 @@ Mata Kuliah: Algoritma Permograman
    - `Enum` atau enumerasi adalah nama simbolis yang mewakili kumpulan nilai yang digunakan sebagai jenis data. Enumerasi dapat digunakan untuk membuat set konstanta yang dapat digunakan bersama variabel dan properti. Enumerasi dapat membuat kode lebih mudah dibaca dan jelas, terutama jika menggunakan nama yang bermakna.
    -  Cara membuat enum : `enum nama_enum { const1, const2,...};`
    -  Contoh:
+
                enum level {EASY = 1, NORMAL = 2, HARD = 3};
                enum sex {MALE, FEMALE};
                enum state {PENDING, INPROGRESS, DONE};
 
 2. Membuat tipe data boolean dari enum
    - Bahasa pemrograman C tidak memiliki tipe data boolean seperti bahasa pemrograman lain. Contoh program tipe data boolean:
+
                  #include <stdio.h>
             
                  enum boolean {false, true};
@@ -554,11 +557,13 @@ Mata Kuliah: Algoritma Permograman
  4. Penggunaan struct
     - struct dapat dibuat dengan kata kunci `struct` kemudian diikuti dengan nama struct lainnya. 
     - contoh penulisan struct yaitu:
-              struct Mahasiswa { char nama; char nim; };
-              struct Mahasiswa{ char nama; char nim; double ipk; };
+
+               struct Mahasiswa { char nama; char nim; };
+               struct Mahasiswa{ char nama; char nim; double ipk; };
 
 5. Menggunakan `typdeaf` pada struct
    - Kata kunci typedef adalah kata kunci untuk mendefinisikan tipe data baru. Contoh:
+
                  // membuat struct dengan typdeaf
                  typdeaf struct Distance{
                        int feet;
@@ -571,6 +576,7 @@ Mata Kuliah: Algoritma Permograman
                  }
 6. struct bersarang
    - Bersarang artinya ada struct di dalam struct. Contoh:
+
                  struct complex
                  {
                     int imag;
@@ -586,6 +592,7 @@ Mata Kuliah: Algoritma Permograman
 
 7. Passing Struct ke dalam fungsi
    - Struct dapat kita buat sebagai parameter untuk fungsi. Contoh:
+
                     # include <stdio.h>
                     struct student
                     {
