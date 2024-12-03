@@ -280,6 +280,12 @@ Mata Kuliah: Algoritma Permograman
                 printf("Rata-rata tinggi badan: %.2f\n", rata_rata);
              }
 
+2. Array Multidimensi
+   -Array multidimensi atau biasa disebut sebagai matriks adalah array yang memiliki lebih dari satu indeks atau subskrip. Array multidimensi dapat berupa array dua dimensi atau tiga dimensi. Array dua dimensi terdiri dari baris dan kolom, sedangkan array tiga dimensi terdiri dari baris, kolom, dan panjang karakter.
+   - Cara mendeklarasikan array multidimensi adalah:
+      - `Array dua dimensi: tipedata[][] namavar = new tipedata[jumlahKolom][jumlahBaris]`
+      - `Array tiga dimensi: int[][][] matriks3Dimensi = new int`
+   
 # <img src="https://media.giphy.com/media/zIN8NHSfum1NkCkNgI/giphy.gif?cid=ecf05e478xcf5kl7v7clt8hqrp06cfs6xdsyspb824fn00ln&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="50" height="50"> Modul 8 (Fungsi dan Prosedur)  
 
 <img align="right" src="https://media.giphy.com/media/2F3NOFXlJcTX2rBHhB/giphy.gif?cid=ecf05e47vtk087bkqxgt6b37r25az4jb3a7r7tnbrpjmjj5q&ep=v1_gifs_related&rid=giphy.gif&ct=g" width="280" />
