@@ -432,9 +432,89 @@ Mata Kuliah: Algoritma Permograman
 
 
 **1. Tujuan Pembelajaran**
+- Mampu menjelaskan dan mengimplementasikan Pointer dalam pemrograman menggunakan IDE.
+  
 **2. Uraian Materi**
+1. Pengertian pointer
+   - Pointer adalah variabel khususus yang menyimpan alamat memori objek dalam bahasa pemrograman. Pointer nantinya akan bisa mengakses data yang ada di suatu alamat memori.
 
+2. Penggunaan pointer
+   - Pointer dibuat dengan menambahkan simbol * (asterik) di depan namanya, kemudian diisi dengan alamat memori yang akan digunakan sebagai referensi.
+   -  contoh: `int *pointer1 = 00001;`
+     > Maka `*pointer1` akan bisa mengakses data yang ada pada alamat memori `00001`. Dengan kata lain, `*pointer1` akan menggunakan alamat `00001` sebagai referensinya.
+   - Alamat memori yang digunakan sebagai referensi pada pointer akan sama dengan alamat memori dari variabel yang kita pakai sebagai referensi. pointer juga punya alamat memorinya sendiri.
+     > Perbedaan: Alamat memori pointer adalah alamat memori yang digunakan untuk menyimpan pointer. Sedangkan alamat referensi adalah alamat yang akan menjadi referensi dari pointer.
 
+3. Pointer untuk mengakses data pada array
+   - Pointer juga sering digunakan untuk mengakses data pada array. Contoh:
+              #include <stdio.h>
+
+              void main(){
+                    printf("## Program Antrian CS ##\n");
+
+                    char no_antrian[5] = {'A', 'B', 'C', 'D', 'E'};
+
+                    // menggunakan pointer
+                    char *ptr_current = &no_antrian;
+
+                    for(int i = 0; i < 5; i++){
+                       printf("Pelanggan dengan no antrian %c silakan ke loket!\n", *ptr_current);
+                       printf("Saat ini CS sedang melayani: %c\n", *ptr_current);
+                       printf("-------- Tekan Enter untuk Next --------");
+                       getchar();
+                       ptr_current++;
+                    }
+
+                    printf("Selesai!");
+              }
+
+     > Pada program ini digunakan `ptr_current` untuk mengakses elemen array. Saat pertama kali dibuat, pointer `ptr_current` akan mereferensi pada elemen pertama array.
+
+4. Pointer untuk mengakses data pada struct
+   - Menggunakan pointer pada struct akan membantu membuat kode menjadi lebih mudah dan gampang dibaca dibandingkan tanpa pointer. Contoh:
+
+                  #include <stdio.h>
+                  
+                  void main(){
+                      struct Player {
+                          char *name;
+                          int score;
+                          int hp;
+                          struct Weapon *weapon;
+                      };
+                  
+                      struct Weapon {
+                          char *name;
+                          int attack;
+                          int guard;
+                      };
+                  
+                      // membuat struct player
+                      struct Player player;
+                      // membuat pointer untuk player
+                      struct Player *player1;
+                      player1 = &player;
+                  
+                      player1->name    = "Petani Kode";
+                      player1->score   = 0;
+                      player1->hp      = 100;
+                  
+                      player1->weapon->name = "Katana";
+                      player1->weapon->attack = 16;
+                      player1->weapon->guard = 10;
+                  
+                      // cetak status player
+                      printf("PLAYER STATUS\n");
+                      printf("Name: %s\n", player1->name);
+                      printf("Score: %d\n", player1->score);
+                      printf("HP: %d\n", player1->hp);
+                      printf("Weapon\n");
+                      printf("  name: %s\n", player1->weapon->name);
+                      printf("  attack: %d\n", player1->weapon->attack);
+                      printf("  guard: %d\n", player1->weapon->guard);
+                  }
+
+      > Pada program ini terdapat dua variabel untuk struct Player, yakni `player` dan `player1`. Variabel `player1` akan menjadi pointer untuk mengakses data pada `player`.
 
 # <img src="https://media.giphy.com/media/ilRltVUHwX18lnOPMM/giphy.gif?cid=ecf05e478xcf5kl7v7clt8hqrp06cfs6xdsyspb824fn00ln&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="50" height="50"> Modul 10 (Enumerasi dan Structure)  
 
