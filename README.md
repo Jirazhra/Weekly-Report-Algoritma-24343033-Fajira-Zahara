@@ -203,7 +203,7 @@ Mata Kuliah: Algoritma Permograman
 4. Percabangan `If Else If`
   - Percabangan if-else if adalah percabangan logika yang berfungsi untuk menyeleksi beberapa kemungkinan yang mungkin terjadi.       
 
-5. Percabangan Switch Case
+5. Percabangan `Switch Case`
   - Percabangan switch case adalah salah satu bentuk percabangan dalam pemrograman yang merupakan alternatif dari percabangan if/else/if. Percabangan switch case dapat digunakan ketika ada beberapa pilihan untuk ekspresi lain yang bisa digunakan.
 
 6. Percabangan Operator Ternary
@@ -222,8 +222,28 @@ Mata Kuliah: Algoritma Permograman
 - Mampu menjelaskan dan mengimplementasikan Looping: Perulangan dalam pemrograman menggunakan IDE.
 
 **2. Uraian Materi**
+1. Pengertian perulangan
+   - perulangan atau Looping adalah konsep pemrograman yang berfungsi untuk mengulang perintah atau eksekusi blok kode secara berulang-ulang. Perulangan bertujuan untuk mempersingkat waktu dan usaha dalam menuliskan program yang harus diulang berkali-kali. Perulangan dapat dilakukan selama kondisi yang dijadikan acuan terpenuhi.
+   - Secara umum, looping dibagi menjadi dua kelompok. Yaitu: counted loop `(perulangan for)` dan uncounted loop `(perulangan while dan Do\while)`.
+     > : Counted Loop merupakan perulangan banyak perulangannya. Sedangkan Uncounted Loop, merupakan perulangan yang tidak jelas berapa kali ia harus mengulang.
 
+2. Perulangan `For` pada C
+   - Perulangan for dalam bahasa pemrograman C adalah struktur yang digunakan untuk mengulang suatu proses yang jumlahnya sudah diketahui. Perulangan ini memiliki struktur yang sederhana dan efisien.
+     > Bentuk umum perulangan for adalah `for(inisialisasi; syarat; penambahan)`.
 
+3. Perulangan `while` pada C
+   - Perulangan while pada bahasa pemrograman C digunakan untuk mengulangi sejumlah pernyataan selama kondisi tertentu terpenuhi. Perulangan ini cocok digunakan ketika jumlah perulangan belum diketahui.
+     > Format perulangan while pada C adalah dengan selalu memeriksa kondisi sebelum memulai perulangan. Perulangan akan terus berlanjut jika kondisi masih True. Jika kondisi adalah False ketika pertama kali masuk perulangan, maka perulangan tidak akan berjalan.
+
+4. Perulangan `Do While` pada C
+   - Perulangan do while sama seperti perulangan while. Perbedaanya, Perulangan do while akan melakukan perulangan sebanyak 1 kali terlebih dahulu, lalu mengecek kondisi yang ada di dalam kurung while. Jika kondisi bernilai benar, maka perulangan dilanjutkan, jika bernilai salah perulangan dihentikan.
+     > Bentuk kode do-while `do { // blok kode yang akan diulang } while (<kondisi>);`
+
+5. Perulangan Bersarang `Nested Loop`
+   - nested loop atau perulangan bersarang atau perulangan di dalam perualangan. adalah apabila pada blok statement perulangan terdapat perulangan lagi.
+     > Contohnya; perulangan for(int i = 0; i < 4; i++) yang di dalamnya terdapat perulangan for(int j = 0; j <= i; j++).
+  
+     
 # <img src="https://media.giphy.com/media/ggpoVsIg0LwtHfTBEY/giphy.gif" width="50" height="50"> Modul 7 (Array)  
 
 <img align="right" src="https://media.giphy.com/media/Roq7iuYrLeJIKFtlfQ/giphy.gif?cid=ecf05e477gt8nrvlv6608d4xghw09d2w03wavfskmcrag930&ep=v1_gifs_related&rid=giphy.gif&ct=g" width="280" />
