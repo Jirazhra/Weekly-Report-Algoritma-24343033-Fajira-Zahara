@@ -194,8 +194,23 @@ Mata Kuliah: Algoritma Permograman
 1. Decision making
    - proses pengambilan keputusan dalam pemrograman yang menggunakan percabangan if then else statement. Percabangan ini digunakan untuk menguji syarat kondisi tertentu pada program
 
-2. If
+2. Percabangan `If`
+   - Percabangan if merupakan percabangan yang hanya memiliki satu blok pilihan saat kondisi bernilai benar.
 
+3. Percabangan `If Else`
+   - Percabangan if/else merupakan percabangan yang memiliki dua blok pilihan. Blok pilihan pertama untuk kondisi benar, dan pilihan kedua untuk kondisi salah (else).
+  
+4. Percabangan `If Else If`
+  - Percabangan if-else if adalah percabangan logika yang berfungsi untuk menyeleksi beberapa kemungkinan yang mungkin terjadi.       
+
+5. Percabangan Switch Case
+  - Percabangan switch case adalah salah satu bentuk percabangan dalam pemrograman yang merupakan alternatif dari percabangan if/else/if. Percabangan switch case dapat digunakan ketika ada beberapa pilihan untuk ekspresi lain yang bisa digunakan.
+
+6. Percabangan Operator Ternary
+  - Percabangan menggunakan operator ternary merupakan bentuk lain dari percabangan if/else. Operator ternary kondisi adalah operator yang berfungsi untuk mengevaluasi ekspresi dan memiliki dua pilihan nilai. Operator ternary juga dikenal dengan sebutan operator kondisi (conditional operator).
+
+7. Percabangan Bersarang
+  - Percabangan bersarang atau `nested if` adalah jenis algoritma yang memiliki percabangan di dalam percabangan. Percabangan bersarang digunakan untuk membuat percabangan program yang kompleks.
 
 
 # <img src="https://media.giphy.com/media/dbDbUCnK9QBDg3Yor3/giphy.gif" width="50" height="50"> Modul 6 (Flow Control - Looping)  
