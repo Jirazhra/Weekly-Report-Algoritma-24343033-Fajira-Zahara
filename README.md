@@ -259,8 +259,8 @@ Mata Kuliah: Algoritma Permograman
    - Array akan menyimpan sekumpulan data dan memberinya nomer indeks agar mudah diakses. Indeks array selalu dimulai dari nol 0.
      > Contohnya `huruf[2]` mengambil huruf ketiga dari array huruf.
     - Untuk merubah data pada aray program dapat mengakses atau memroses elemen array.
-    - Dalam suatu kondisi, jika jumlah suatu data besar perulangan dalam array dibutuhkan untuk menghemat waktu dan usaha. Perulangan dalam array dapat dilakukan dengan menggunakan beberapa struktur perulangan, seperti perulangan while dan perulangan foreach
-      > Perulangan foreach dapat dibuat dengan menggunakan method forEach() dari array. Perulangan foreach sama seperti perulangan for, namun lebih khusus digunakan untuk mencetak array.
+    - Dalam suatu kondisi jika jumlah suatu data memiliki jumlah yang besar, perulangan dalam array dibutuhkan untuk menghemat waktu dan usaha. Perulangan dalam array dapat dilakukan dengan menggunakan beberapa struktur perulangan, seperti perulangan while dan perulangan foreach
+      > Perulangan foreach dapat dibuat dengan menggunakan `method forEach()` dari array. Perulangan foreach sama seperti perulangan for, namun lebih khusus digunakan untuk mencetak array.
      - Pengambilan panjang array mengguakan fungsi `sizeof()`, dengan membagi ukuran total array dengan ukuran satu elemen.
      - Contoh program menghitung rata-rata dengan menggunakan array:
 
