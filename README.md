@@ -312,7 +312,119 @@ Mata Kuliah: Algoritma Permograman
 
 **2. Uraian Materi**
 1. Pengertian Fungsi
-   - 
+   - Fungsi dalam C merupakan sekumpulan code yang dibungkus ke dalam sebuah scope untuk menjalankan tugas tertentu. Fungsi memungkinkan kita untuk menghemat penulisan kode yang mana sering ditulis berulang-ulang, namun bisa dibungkus ke dalam sebuah fungsi dan kita tinggal memanggilnya saja. Fungsi biasanya akan mengembalikan sebuah nilai dari hasil prosesnya.
+   - contoh sederhana program menampilkan say_hello() berulang sebanyak tiga kali
+
+           #include <stdio.h>
+
+           // membuat fungsi say_hello()
+           void say_hello(){
+              printf("Hello Selamat Datang!\n");
+           }
+
+           void main(){
+              // memanggil fungsi say_hello()
+              say hello();
+              say hello();
+              say hello();
+           }
+
+2. Fungsi dan Parameter
+   - Parameter adalah suatu variabel yang berfungsi untuk menampung nilai yang akan dikirimkan ke dalam fungsi. Dengan adanya parameter, sebuah fungsi dapat bersift dinamis.
+   - Parameter dapat dipahami sebagai sebuah variabel buku kerja yang ditunjukkan dalam berbagai bentuk, mulai dari bentuk angka, tanggal, atau string yang dapat menggantikan nilai konstanta dalam penghitungan, filter, dan dalam sebuah garis referensi.
+   - contoh sederhana program dengan mnggunakan parameter
+
+           #include <stdio.h>
+
+           void say_hello(char name{}){
+              printf("Hello %s!\n", name);
+           }
+
+           void main(){
+              say hello("Jira");
+              say hello("beom");
+              say hello("kai");
+           }
+
+3. Fungsi yang mengembalikan nilai
+   - Fungsi yang mengembalikan nilai atau `return` dalam bahasa C digunakan untuk mengembalikan nilai dari sebuah fungsi dan mengakhiri eksekusi fungsi tersebut.
+   - contoh sederhana
+
+              #include <stdio.h>
+
+              float bagi(int a, int b){
+                 float hasil = (float)a / (float)b;
+                 return hasil;
+              }
+
+              void main(){
+                 printf("Hasil 5/2: %.2f\n", bagi(5, 2));
+              }
+
+4. Fungsi Rekursif
+   - Fungsi rekursif dalam bahasa C adalah metode perulangan yang terjadi ketika suatu fungsi memanggil dirinya sendiri. Fungsi rekursif dapat digunakan untuk menyelesaikan berbagai macam masalah, seperti faktorial, fibonacci, pencarian, dan pembagian.
+   - contoh sederhana
+
+               #include <stdio.h>
+               int sum(int n);
+
+               void main(){
+                    int number, result;
+
+                    printf("Enter a positive integer: ");
+                    scanf("%d", &number);
+
+                    result = sum(number);
+
+                    printf("sum = %d", result);
+              }
+
+              int sum(int num){
+                    if (num!=0)
+                       return num + sum(num-1); // fungsi sum() memanggil dirinya sendiri
+                    else
+                       return num;
+              }
+
+5. Variabel loka & variabel global
+   - Variabel global adalah variabel yang bisa diakses dari semua fungsi. Sedangkan variabel lokal adalah variabel yang hanya bisa diakses dari dalam fungsi itu sendiri.
+   - contoh sederhana:
+
+           #include <stdio.h>
+
+           // membuat variabel global
+           int nilai = 9;
+
+           void main(){
+              // membuat variabel lokal
+              int nilai = 7;
+
+              // mencetak variabel
+              printf("Nilai: %d\n", nilai);
+           }
+
+
+6. Pass by Value & Pass by Reference     
+   - Pemanggilan dengan nilai (pass by value) adalah cara yang dipakai untuk seluruh fungsi buatan yang telah dibahas pada artikel sebelumnya. pada pass by value, nilai parameter aktual akan disalin ke parameter formal.
+    > contoh: `kali_dua(4);` ini disebut paass by value, karena membrikan nilai 4.
+   - Pemanggilan dengan referensi (pass by reference) adalah upaya untuk melewatkan alamat dari suatu variabel ke dalamfungsi. Cara ini dipakaiuntuk mengubah isi suatu variabel di luar fungsi dengan pelaksanaan pengubahan dilakukan di dalam fungsi.
+     > contoh: `kali_dua(&nama_variabel);` ini disebut pass by reference, karena memberikan alamat.
+   - Contoh sederhana
+
+           #include <stdio.h>
+
+           void kali_dua(int *num){
+              *num = *num * 2;
+           }
+
+           void main(){
+              int angka = 9;
+
+              kali_dua(&angka); //memanggil fungsi
+
+              printf("isi variabel angka = %d\n", angka); // mencetak isi variabel setelah fungsi dipanggil
+           }
+
 
 # <img src="https://media.giphy.com/media/6rNcvmYFRmK3mfm0Ot/giphy.gif?cid=ecf05e47yxlu2labhqob8lu316qup3na2gmwaxe2t7ajzc5p&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="50" height="50"> Modul 9 (Pointer)  
 
