@@ -241,7 +241,7 @@ Mata Kuliah: Algoritma Permograman
 
 5. Perulangan Bersarang `Nested Loop`
    - nested loop atau perulangan bersarang atau perulangan di dalam perualangan. adalah apabila pada blok statement perulangan terdapat perulangan lagi.
-     > Contohnya; perulangan for(int i = 0; i < 4; i++) yang di dalamnya terdapat perulangan for(int j = 0; j <= i; j++).
+     > Contohnya; perulangan `for(int i = 0; i < 4; i++)` yang di dalamnya terdapat perulangan `for(int j = 0; j <= i; j++)`.
   
      
 # <img src="https://media.giphy.com/media/ggpoVsIg0LwtHfTBEY/giphy.gif" width="50" height="50"> Modul 7 (Array)  
@@ -250,8 +250,33 @@ Mata Kuliah: Algoritma Permograman
 
 
 **1. Tujuan Pembelajaran**
+- Mampu menjelaskan dan mengimplementasikan Data Structure: Array dalam pemrograman menggunakan IDE.
+  
 **2. Uraian Materi**
+1. Array
+   - Array merupakan struktur data yang digunakan untuk menyimpan sekumpulan data dalam satu tempat, array ini juga disebut dengan istilah larik. Pada bahasa C, array mempunyai lokasi yang bersebelahan. Alamat terkecil menunjuk ke elemen pertama dan alamat terbesar menunjuk ke alamat terakhir. Sebuah elemen pada array diakses melalui indeksnya.
+   - Cara membuat array hampir sama dengan membuat variabel seperti biasanya. Bedanya saat menggunakan array maka perlu menentukan panjang array menggunakan kurung siku [ ].
+   - Array akan menyimpan sekumpulan data dan memberinya nomer indeks agar mudah diakses. Indeks array selalu dimulai dari nol 0.
+     > Contohnya `huruf[2]` mengambil huruf ketiga dari array huruf.
+    - Untuk merubah data pada aray program dapat mengakses atau memroses elemen array.
+    - Dalam suatu kondisi, jika jumlah suatu data besar perulangan dalam array dibutuhkan untuk menghemat waktu dan usaha. Perulangan dalam array dapat dilakukan dengan menggunakan beberapa struktur perulangan, seperti perulangan while dan perulangan foreach
+      > Perulangan foreach dapat dibuat dengan menggunakan method forEach() dari array. Perulangan foreach sama seperti perulangan for, namun lebih khusus digunakan untuk mencetak array.
+     - Pengambilan panjang array mengguakan fungsi `sizeof()`, dengan membagi ukuran total array dengan ukuran satu elemen.
+     - Contoh program menghitung rata-rata dengan menggunakan array:
+         #include <stdio.h>
+       
+         void main() {
+            int tinggi_badan[10] = {175, 165, 166, 157, 184, 156, 163, 176, 171, 169};  // membuat array dari tinggi badan
+            int length = sizeof(tinggi_badan) / sizeof(*tinggi_badan);
+            int sum = 0;
+       
+            for(int i = 0; i < length; i++){
+                sum += tinggi_badan[i];
+            }
 
+            float rata_rata = (float)sum / (float)length;
+            printf("Rata-rata tinggi badan: %.2f\n", rata_rata);
+         }
 
 # <img src="https://media.giphy.com/media/zIN8NHSfum1NkCkNgI/giphy.gif?cid=ecf05e478xcf5kl7v7clt8hqrp06cfs6xdsyspb824fn00ln&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="50" height="50"> Modul 8 (Fungsi dan Prosedur)  
 
