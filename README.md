@@ -629,10 +629,49 @@ Mata Kuliah: Algoritma Permograman
 - Mampu menjelaskan dan mengimplementasikan Write & Read dalam File dalam pemrograman menggunakan IDE.
   
 **2. Uraian Materi**
+1. Pengertian file
+   - Dalam pemrograman, file adalah kumpulan data yang disimpan dalam media penyimpanan, seperti hard drive, disk, DVD, disket, atau folder. File dapat berupa teks, angka, gambar, video, slide, program, dan lain-lain.
+   - Melansir Computer Hope, file adalah objek pada komputer yang menyimpan data, informasi, pengaturan, atau perintah yang digunakan dengan program komputer.
+   - file dibutuhkan untuk menyimpan data secara permanen, meski itu saat program ditutup. File dapat berupa file teks yang mudah dibaca seperti `.txt`, `.csv`, dan `.html`, atau dapat berupa file biner yang tersimpen dalam bentuk biner `0` dan `1` seperti file `.exe` dan `.bin`.
+  
+2. Membaca File dengan C
+   - Fungsi `fopen()` akan membuka file sesuai dengan mode yang kita berikan. Fungsi `fopen()` akan menghasilkan sebuah pointer yang menunjuk ke alamat memori dari file yang akan dibuka. format `fopen`:
+     
+                  fopen("filepath", "r");
+   - Mode-mode yang digunakan dalam fungsi `fopen()`
+     - `r` untuk membaca file
+     - `rb` untuk dibacaa dibinary
+     - `w` umuk menulis
+     - `wb` umtuk menulis di binary
+     - `a` untuk menambahkan
+     - `ab` unuk menambahkan ke binary
+     - `r+` untuk membaca dan menulis
+     - `rb+` untuk membaca dan menulis dalam binary
+     - `w+` untuk menulis dan membaca
+     - `wb+` untuk menulis dan membaca dalam binary
+     - `a+` untuk membaca dan menambahkan isinya
+     - `ab+` untuk membaca dan menambahkan isinya dalam binary
 
+   - Bersamaan dengan `fopen()`, fungsi `fgets()` digunakan dalam proses ini. Fungsi fgets() akan membaca isi file yang ditunjuk oleh pointer fptr, kemudian hasilnya akan disimpan ke dalam variabel buff.
+      - contoh penulisan: 
+  
+             FILE *fptr = fopen("file.txt", "r");
+             fgets(buff, 255, fptr);
+      
+      - penulisan jika file banyak, cara membaca semua baris dalam file:
 
+            while (fgets(buff, sizeof(buff), fptr){
+                 printf("%s", buff);
+           }
+        
+3. Menulis dalam File dengan C
+   - Fungsi `fputs()` akan menulis teks ke dalam file yang sedang dibuka. Untuk menulis banyak baris, panggil `fputs()` berulang kali atau menggunakan perulangan.
+   - Contoh penulisan:
+     
+           FILE *fptr = fopen("file.txt", "w");
+           fputs("Ini baris pertama.\n", fptr);
 
-
+---
 
 <div align="center">
 
