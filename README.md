@@ -308,8 +308,11 @@ Mata Kuliah: Algoritma Permograman
 
 
 **1. Tujuan Pembelajaran**
-**2. Uraian Materi**
+- Mampu menjelaskan dan mengimplementasikan Function & Procedure dalam pemrograman menggunakan IDE.
 
+**2. Uraian Materi**
+1. Pengertian Fungsi
+   - 
 
 # <img src="https://media.giphy.com/media/6rNcvmYFRmK3mfm0Ot/giphy.gif?cid=ecf05e47yxlu2labhqob8lu316qup3na2gmwaxe2t7ajzc5p&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="50" height="50"> Modul 9 (Pointer)  
 
