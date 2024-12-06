@@ -151,6 +151,139 @@ Mata Kuliah: Algoritma Permograman
 <img src="https://media.giphy.com/media/59Lio6mUuLS45T9rpG/giphy.gif" width="350" height="350" />
 </div>
 
+## Tugas dan latihan 
+**LATIHAN 1**
+- Penjelasan program menghitung dan menampilkan luas dari sebuah persegi panjang
+  - Header file `stdio.h`
+    - Baris ini menyertakan file header standar `stdio.h`, yang diperlukan untuk menggunakan fungsi input-output seperti `printf` yang digunakan untuk menampilkan output di layar.
+
+  - Deklarasi Fungsi `main()`
+    - `main()` adalah fungsi utama dalam program C. Fungsi ini akan dijalankan pertama kali ketika program dieksekusi. Program C biasanya dimulai dari fungsi `main()`.
+   
+  - Deklarasi dan Inisialisasi Variabel
+    - `int panjang = 10;` Mendeklarasikan variabel `panjang` dengan nilai 10.
+    - `int lebar = 5;` Mendeklarasikan variabel `lebar` dengan nilai 5.
+    - `int luas_persegi_panjang = panjang * lebar;` Mendeklarasikan variabel `luas_persegi_panjang` dan menghitung luas persegi panjang dengan rumus `panjang * lebar`. Dalam hal ini, luasnya adalah 10 * 5 = 50.
+
+  - Menampilkan Hasil ke Layar
+    - `printf` adalah fungsi untuk menampilkan output ke layar.
+    - `%i` adalah format spesifier yang digunakan untuk mencetak nilai integer. Program ini menampilkan nilai dari variabel `luas_persegi_panjang`, yaitu 50, di layar dengan pesan "luas persegi panjang: 50".
+   
+   - Fungsi `return 0;`
+     - `return 0;` menunjukkan bahwa program berakhir dengan sukses. Biasanya, `return 0` digunakan dalam fungsi `main()` untuk memberi tahu sistem operasi bahwa program telah dijalankan tanpa kesalahan.
+    
+   - Output program
+
+           Luas persegi panjang: 50
+
+**LATIHAN 2**
+- Penjelasan program menghitung dan menampilkan luas segitiga.
+  - Header file stdio.h
+    - Baris ini menyertakan file header standar `stdio.h`, yang diperlukan untuk menggunakan fungsi input-output seperti `printf` yang digunakan untuk menampilkan output di layar.
+      
+  - Fungsi main()
+    - Fungsi `main()` adalah titik awal program ketika dieksekusi. Program dimulai dari fungsi `main()`
+      
+  - Deklarasi dan Inisialisasi Variabel
+    - `int alas = 8;` Mendeklarasikan variabel  `alas` dengan nilai 8, yang merupakan panjang alas segitiga.
+    - `int tinggi = 5;` Mendeklarasikan variabel `tinggi` dengan nilai 5, yang merupakan tinggi segitiga.
+    - `int luas_segitiga = (alas * tinggi) * 0.50;` Mendeklarasikan variabel `luas_segitiga` dan menghitung luas segitiga menggunakan rumus:
+      > Luas = 1/2 X alas X tinggi
+      > Hasil perhitungan ini disimpan dalam variabel `luas_segitiga`.
+         
+  - Menampilkan Hasil ke Layar
+    - Fungsi `printf` digunakan untuk menampilkan output ke layar.
+    - `%i` adalah format spesifier yang digunakan untuk menampilkan nilai integer. Program ini akan mencetak nilai dari `luas_segitiga`, yang dalam hal ini adalah 20, ke layar dengan pesan "luas segitiga: 20".
+      
+  - Fungsi `return 0;`
+    - `return 0;` menunjukkan bahwa program berakhir dengan sukses. Biasanya, `return 0` digunakan dalam fungsi `main()` untuk memberi tahu sistem operasi bahwa program telah dijalankan tanpa kesalahan.
+      
+  - Output Program
+ 
+          Luas segitiga: 20
+
+**LATIHAN 3**
+- penjelasan program input nama
+  - Header file `stdio.h` dan `string.h`
+    - `stdio.h` adalah file header yang menyediakan fungsi untuk input dan output, seperti `printf` dan `scanf`.
+    - `string.h` adalah file header yang menyediakan fungsi untuk manipulasi string, meskipun dalam program ini kita tidak menggunakan fungsi dari header tersebut, tetapi bisa berguna jika nanti ingin memanipulasi string.
+      
+  - Deklarasi dan Inisialisasi Variabel
+    - `char fajirazahara[31];` mendeklarasikan sebuah array karakter (string) dengan nama `fajirazahara` yang dapat menampung hingga 30 karakter ditambah satu untuk karakter null `(\0)`, yang digunakan untuk menandakan akhir dari string.
+      
+  - Menampilkan Prompt Input Nama
+    - `printf` digunakan untuk menampilkan pesan "Hello, siapa nama lengkap kamu?" ke layar, memberikan instruksi kepada pengguna untuk memasukkan nama lengkap mereka.
+      
+  - Membaca Input Nama
+    - Fungsi `scanf` digunakan untuk membaca input dari pengguna. Format spesifier `"%[^\n]s"` adalah cara untuk membaca seluruh input termasuk spasi hingga ditemukan karakter newline `(\n)`, yang biasanya terjadi saat pengguna menekan tombol Enter. Input ini akan disimpan dalam variabel `fajirazahara`.
+    - `%[^\n]` Membaca semua karakter sampai karakter newline (Enter) ditemukan. Hal ini memungkinkan pengguna untuk memasukkan nama lengkap dengan spasi.
+      
+  - Menampilkan Pesan Selamat Datang
+    - Setelah nama dimasukkan, program akan menampilkan pesan selamat datang dengan menggunakan `printf`. Format spesifier `%s` digunakan untuk menampilkan string (nama yang dimasukkan oleh pengguna) yang disimpan dalam variabel `fajirazahara`.
+      
+  - Fungsi return 0;
+    - Fungsi `main()` berakhir dengan `return 0;`, yang menunjukkan bahwa program berjalan dengan sukses tanpa kesalahan.
+      
+  - Output Program
+ 
+          Hello, siapa nama lengkap kamu?
+          Fajira Zahara
+          Selamat datang Fajira Zahara dalam permograman c!
+
+**LATIHAN 4**
+- Penjelasan program menghitung nilai akhir mahasiswa
+  - Deklarasi Variabel
+    - `nama[100]`, `nim[50]`, `prodi[100]`, `fakultas[100]` Ini adalah array karakter yang masing-masing menampung data string seperti nama, NIM, program studi, dan fakultas. Ukuran array disesuaikan dengan panjang input yang diperkirakan (misalnya, nama bisa lebih panjang daripada NIM).
+    - `nilaipraktikum`, `nilaiUTS`, `nilaiUAS`, `nilaiakhir` Variabel bertipe `float` digunakan untuk menyimpan nilai praktikum, nilai UTS, nilai UAS, dan nilai akhir yang dihitung.
+      
+  - Input Data Pribadi
+    - Program meminta input dari pengguna untuk nama, NIM, program studi, dan fakultas menggunakan `fgets()` untuk membaca input yang lebih lengkap, termasuk spasi. Fungsi `fgets()` lebih aman dibandingkan `scanf("%s", ...)` karena dapat membaca spasi dalam input.
+    - `gets(nama, sizeof(nama), stdin)` digunakan untuk membaca input nama hingga 99 karakter (dan satu karakter untuk terminator null).
+    - Fungsi `fgets` membaca seluruh input termasuk spasi, tetapi hasil input masih memiliki karakter newline `(\n)` pada akhir string. Ini bisa diatasi dengan menghapus karakter newline jika diperlukan, namun untuk penjelasan ini kita lanjutkan terlebih dahulu.
+      
+  - Input Nilai Praktikum, UTS, dan UAS
+    - Fungsi `scanf("%f", ...)` digunakan untuk membaca nilai numerik (float) untuk praktikum, UTS, dan UAS. Nilai-nilai ini akan dimasukkan oleh pengguna.
+    
+  - Menghitung Nilai Akhir
+    - Nilai akhir dihitung menggunakan rumus `Nilai Akhir = 0.30 × Nilai Praktikum + 0.30 × Nilai UTS + 0.40 × Nilai UAS`
+    - Nilai praktikum memiliki bobot 30%, nilai UTS 30%, dan nilai UAS 40%. Hasilnya disimpan dalam variabel `nilaiakhir`.
+
+  - Menampilkan Hasil
+    - Program akan menampilkan data yang telah dimasukkan, termasuk nama, NIM, prodi, fakultas, nilai praktikum, UTS, UAS, dan nilai akhir. Format `%.2f` digunakan untuk menampilkan nilai float dengan dua angka di belakang koma.
+
+  - Pengembalian Nilai dari Fungsi main()
+    - `return 0;` menunjukkan bahwa program berjalan dengan sukses tanpa kesalahan.
+      
+  - Output Program
+    - misalkan kita mempunyai data seperti berikut:
+      - Nama: "Kai Kamal"
+      - NIM: "232425226"
+      - Prodi: "Informatika"
+      - Fakultas: "Teknik"
+      - Nilai Praktikum: 80
+      - Nilai UTS: 75
+      - Nilai UAS: 85
+     - maka output yang ditampilkan seperti ini:
+
+             masukkan nama: Kai Kamal
+             masukkan nim: 23242526
+             masukkan prodi: Informatika
+             masukkan fakultas: Teknik
+             masukkan nilaipraktikum: 80
+             masukkan nilaiUTS: 75
+             masukkan nilaiUAS: 85
+       
+             -------------------------
+             nama: Kai Kamal
+             nim: 23242526
+             prodi: Informatika
+             fakultas: Teknik
+             nilaipraktikum: 80.00
+             nilaiUTS: 75.00
+             nilaiUAS: 85.00
+             nilai akhir anda adalah: 80.50
+
+
 # <img src="https://media.giphy.com/media/x4txkarjMusRtuulwM/giphy.gif?cid=ecf05e47q5vz7rij0nuuk717fxigne54an20rqysgacm6adc&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="50" height="50"> Modul 3 (Variable, Konstanta dan Tipe Data) 
 
 <img align="right" src="https://media.giphy.com/media/cOhNvklPX1Eldwhk7k/giphy.gif?cid=ecf05e47ojcuks7gzvb6laaha3243m4ya7b0svj19zaqd1z8&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="350" />
@@ -183,6 +316,8 @@ Mata Kuliah: Algoritma Permograman
 <div align="center">
 <img src="https://media.giphy.com/media/kGL0anhVOqrI05x0Ju/giphy.gif" width="350" height="350" />
 </div>
+
+## Tugas dan latihan 
        
 # <img src="https://media.giphy.com/media/fogCm9SiQeL6ucIHCy/giphy.gif?cid=ecf05e47yxlu2labhqob8lu316qup3na2gmwaxe2t7ajzc5p&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="50" height="50"> Modul 4 (Operator)  
 
@@ -252,6 +387,8 @@ Mata Kuliah: Algoritma Permograman
 <img src="https://media.giphy.com/media/CH20MLdNIAiAtMbnVj/giphy.gif" width="350" height="350" />
 </div>
 
+## Tugas dan latihan 
+
 # <img src="https://media.giphy.com/media/FRPRLVXkKp5Xuqs2eK/giphy.gif?cid=ecf05e47q5vz7rij0nuuk717fxigne54an20rqysgacm6adc&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="50" height="50"> Modul 5 (Flow Control - Decision Making)  
 
 <img align="right" src="https://media.giphy.com/media/2H67VmB5UEBmU/giphy.gif?cid=ecf05e47o0e9igu81gicys9uaoeqwy4241a2ryhenntpsk5g&ep=v1_gifs_related&rid=giphy.gif&ct=g" width="350" />
@@ -284,6 +421,8 @@ Mata Kuliah: Algoritma Permograman
 <div align="center">
 <img src="https://media.giphy.com/media/MrQSRHN4APA5cEw6a2/giphy.gif" width="350" height="350" />
 </div>
+
+## Tugas dan latihan 
 
 # <img src="https://media.giphy.com/media/dbDbUCnK9QBDg3Yor3/giphy.gif" width="50" height="50"> Modul 6 (Flow Control - Looping)  
 
@@ -318,6 +457,8 @@ Mata Kuliah: Algoritma Permograman
 <div align="center">
 <img src="https://media.giphy.com/media/UfoxjyhDp5lghxvaDT/giphy.gif" width="200" height="200" />
 </div>
+
+## Tugas dan latihan 
      
 # <img src="https://media.giphy.com/media/ggpoVsIg0LwtHfTBEY/giphy.gif" width="50" height="50"> Modul 7 (Array)  
 
@@ -379,6 +520,8 @@ Mata Kuliah: Algoritma Permograman
 <div align="center">
 <img src="https://media.giphy.com/media/XPtHPWgKXRg0hhN1Od/giphy.gif?cid=ecf05e47e3v9b8qhcjdj3ephryax8n7mdjtkne1yv8qqj7s2&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="350" height="350" />
 </div>
+
+## Tugas dan latihan 
    
 # <img src="https://media.giphy.com/media/zIN8NHSfum1NkCkNgI/giphy.gif?cid=ecf05e478xcf5kl7v7clt8hqrp06cfs6xdsyspb824fn00ln&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="50" height="50"> Modul 8 (Fungsi dan Prosedur)  
 
@@ -507,6 +650,8 @@ Mata Kuliah: Algoritma Permograman
 <img src="https://media.giphy.com/media/lM4LRVZcawbj39IHhu/giphy.gif" width="350" height="350" />
 </div>
 
+## Tugas dan latihan 
+
 # <img src="https://media.giphy.com/media/6rNcvmYFRmK3mfm0Ot/giphy.gif?cid=ecf05e47yxlu2labhqob8lu316qup3na2gmwaxe2t7ajzc5p&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="50" height="50"> Modul 9 (Pointer)  
 
 <img align="right" src="https://media.giphy.com/media/Jq6XWnYR82RWOPoIre/giphy.gif?cid=ecf05e47lgmqif5xj83gstc921gguxqpq82i9xncttn1uzl9&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="250" />
@@ -601,6 +746,8 @@ Mata Kuliah: Algoritma Permograman
 <div align="center">
 <img src="https://media.giphy.com/media/kGslXIWC8NTa6LWRaR/giphy.gif" width="350" height="350" />
 </div>
+
+## Tugas dan latihan 
 
 # <img src="https://media.giphy.com/media/ilRltVUHwX18lnOPMM/giphy.gif?cid=ecf05e478xcf5kl7v7clt8hqrp06cfs6xdsyspb824fn00ln&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="50" height="50"> Modul 10 (Enumerasi dan Structure)  
 
@@ -708,6 +855,8 @@ Mata Kuliah: Algoritma Permograman
 <div align="center">
 <img src="https://media.giphy.com/media/hWB5JhRdBbuKtoH4Ff/giphy.gif" width="350" height="350" />
 </div>
+
+## Tugas dan latihan 
       
 # <img src="https://media.giphy.com/media/0bW6yseaFOR0i4evMs/giphy.gif" width="50" height="50"> Modul 11 (File Handling in C)  
 
@@ -764,6 +913,8 @@ Mata Kuliah: Algoritma Permograman
 <div align="center">
 <img src="https://media.giphy.com/media/M0mAms22oTSsHoxX6H/giphy.gif" width="350" height="350" />
 </div>
+
+## Tugas dan latihan 
 ---
 
 <div align="center">
