@@ -376,7 +376,7 @@ Mata Kuliah: Algoritma Permograman
             Suhu dalam Fahrenheit: 77.00
             Suhu dalam Reamur: 20.00
 
-***LATIHAN 3**
+**LATIHAN 3**
 -  Penjelasan program menghitung volume dan luas permukaan bola
   - Deklarasi Variabel
     - `d` Variabel bertipe `float` yang menyimpan diameter bola. Dalam hal ini, diameter yang diberikan adalah 12.
@@ -471,6 +471,23 @@ Mata Kuliah: Algoritma Permograman
 </div>
 
 ## Tugas dan latihan 
+**LATIHAN 1**
+- penjelasan program data nilai mahasiswa
+  - Deklarasi Variabel
+    - int nilai_presensi, nilai_praktek, nilai_UTS, nilai_UAS;
+      - nilai_presensi: Variabel untuk menyimpan nilai presensi.
+      - nilai_praktek: Variabel untuk menyimpan nilai praktek.
+      - nilai_UTS: Variabel untuk menyimpan nilai UTS.
+      - nilai_UAS: Variabel untuk menyimpan nilai UAS.
+  - Pengisian Nilai
+  - Menampilkan Nilai Sebelum Konversi
+  - Menghitung Nilai Akhir Berdasarkan Bobot
+  - Menampilkan Hasil Konversi Nilai
+  - Return Statement
+  - Output program
+**LATIHAN 2**
+**LATIHAN 3**
+**LATIHAN 4**
 
 # <img src="https://media.giphy.com/media/FRPRLVXkKp5Xuqs2eK/giphy.gif?cid=ecf05e47q5vz7rij0nuuk717fxigne54an20rqysgacm6adc&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="50" height="50"> Modul 5 (Flow Control - Decision Making)  
 
@@ -506,6 +523,10 @@ Mata Kuliah: Algoritma Permograman
 </div>
 
 ## Tugas dan latihan 
+**LATIHAN 1**
+**LATIHAN 2**
+**LATIHAN 3**
+**LATIHAN 4** 
 
 # <img src="https://media.giphy.com/media/dbDbUCnK9QBDg3Yor3/giphy.gif" width="50" height="50"> Modul 6 (Flow Control - Looping)  
 
@@ -542,6 +563,10 @@ Mata Kuliah: Algoritma Permograman
 </div>
 
 ## Tugas dan latihan 
+**LATIHAN 1**
+**LATIHAN 2**
+**LATIHAN 3**
+**LATIHAN 4**
      
 # <img src="https://media.giphy.com/media/ggpoVsIg0LwtHfTBEY/giphy.gif" width="50" height="50"> Modul 7 (Array)  
 
@@ -605,6 +630,10 @@ Mata Kuliah: Algoritma Permograman
 </div>
 
 ## Tugas dan latihan 
+**LATIHAN 1**
+**LATIHAN 2**
+**LATIHAN 3**
+**LATIHAN 4**
    
 # <img src="https://media.giphy.com/media/zIN8NHSfum1NkCkNgI/giphy.gif?cid=ecf05e478xcf5kl7v7clt8hqrp06cfs6xdsyspb824fn00ln&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="50" height="50"> Modul 8 (Fungsi dan Prosedur)  
 
@@ -734,6 +763,10 @@ Mata Kuliah: Algoritma Permograman
 </div>
 
 ## Tugas dan latihan 
+**LATIHAN 1**
+**LATIHAN 2**
+**LATIHAN 3**
+**LATIHAN 4**
 
 # <img src="https://media.giphy.com/media/6rNcvmYFRmK3mfm0Ot/giphy.gif?cid=ecf05e47yxlu2labhqob8lu316qup3na2gmwaxe2t7ajzc5p&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="50" height="50"> Modul 9 (Pointer)  
 
@@ -831,6 +864,10 @@ Mata Kuliah: Algoritma Permograman
 </div>
 
 ## Tugas dan latihan 
+**LATIHAN 1**
+**LATIHAN 2**
+**LATIHAN 3**
+**LATIHAN 4**
 
 # <img src="https://media.giphy.com/media/ilRltVUHwX18lnOPMM/giphy.gif?cid=ecf05e478xcf5kl7v7clt8hqrp06cfs6xdsyspb824fn00ln&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="50" height="50"> Modul 10 (Enumerasi dan Structure)  
 
@@ -940,6 +977,10 @@ Mata Kuliah: Algoritma Permograman
 </div>
 
 ## Tugas dan latihan 
+**LATIHAN 1**
+**LATIHAN 2**
+**LATIHAN 3**
+**LATIHAN 4** 
       
 # <img src="https://media.giphy.com/media/0bW6yseaFOR0i4evMs/giphy.gif" width="50" height="50"> Modul 11 (File Handling in C)  
 
@@ -998,6 +1039,10 @@ Mata Kuliah: Algoritma Permograman
 </div>
 
 ## Tugas dan latihan 
+**LATIHAN 1**
+**LATIHAN 2**
+**LATIHAN 3**
+**LATIHAN 4** 
 ---
 
 <div align="center">
