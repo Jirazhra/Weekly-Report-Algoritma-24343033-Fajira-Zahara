@@ -25,7 +25,7 @@ Mata Kuliah: Algoritma Permograman
 <img align="right" src="https://media.giphy.com/media/k62wKQNmw3YwjJJJvH/giphy.gif?cid=ecf05e47nc02hwlymwukvivk7xw5hjfhtrm11m5pgb60obe2&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="250" />
 
 
-**1. Tujuan Pembelajaran** 
+**1. Tujuan Pembelajaran**
    - Mampu memahami, menjelaskan, mengaplikasikan algoritma melalui pemrograman.
    - Mempu memahami cara instalasi, fungsi dan penggunaan IDE.
    - Mampu membuat, mengkompilasi, menganalisis kesalahan dalam pemrograman menggunakan IDE.
@@ -49,6 +49,66 @@ Mata Kuliah: Algoritma Permograman
 6. Integrated Development Environment (IDE)
    - IDE atau Integrated Development Environment adalah software atau perangkat lunak yang digunakan oleh programmer untuk membuat sebuah program komputeratau         sebagai tempat pengembangan aplikasi. Contohnya adalah DevC++, Microsoft Visual Studio, CodeBlocks, NetBeans, Eclips, dll.
 
+<div align="center">
+<img src="https://media.giphy.com/media/htpcYIiUsebugP0HLl/giphy.gif" width="350" height="350" />
+</div>
+
+## Tugas dan latihan 
+**LATIHAN 1.Apa itu algoritma, pemrograman, program, programmer, dan IDE?**
+1. Algoritma
+- Algoritma adalah langkah-langkah atau prosedur sistematis untuk menyelesaikan suatu masalah. Dalam pemrograman, algoritma merupakan inti dari setiap solusi yang kita buat untuk mengatasi suatu tantangan.
+- Contoh Algoritma, misalkan kita ingin mengurutkan angka dari yang terkecil ke yang terbesar. Berikut adalah algoritma sederhana untuk tugas tersebut:
+  - Bandingkan dua angka berturut-turut.
+  - Jika angka pertama lebih besar dari angka kedua, tukar posisi kedua angka.
+  - Ulangi proses ini sampai seluruh angka terurut.
+
+2. Pemrograman
+- Pemrograman adalah proses menulis, menguji, dan memelihara kode untuk membuat program. Pemrograman memungkinkan kita untuk menginstruksikan komputer bagaimana cara bekerja dan melakukan tugas tertentu.
+- Pemrograman dapat dilakukan dalam berbagai bahasa, seperti Python, Java, C++, atau JavaScript
+
+3. Program
+- Program adalah kumpulan instruksi atau kode yang ditulis dalam bahasa pemrograman dan dapat dieksekusi oleh komputer. Program mengatur bagaimana komputer harus berperilaku dan menyelesaikan tugas sesuai dengan instruksi yang diberikan.
+
+4. Programmer
+- Programmer adalah orang yang menulis, mengembangkan, dan memelihara program komputer. Untuk menjadi programmer yang efektif, seseorang harus menguasai bahasa pemrograman serta algoritma untuk memecahkan masalah secara efisien dan mengembangkan solusi perangkat lunak.
+
+5. IDE
+- IDE adalah perangkat lunak yang menyediakan lingkungan pengembangan yang lengkap untuk menulis dan mengelola kode. IDE biasanya dilengkapi dengan berbagai alat, seperti editor kode, debugger, dan compiler, yang memudahkan programmer dalam menulis, menguji, dan memelihara kode dengan cara yang lebih efisien.
+- Fitur Utama IDE: Jelaskan fitur-fitur penting IDE selain yang sudah disebutkan (auto-completion, refactoring, debugging) dan bagaimana fitur-fitur ini meningkatkan produktivitas programmer. Contoh IDE: Berikan beberapa contoh IDE yang populer untuk bahasa pemrograman yang berbeda (misalnya, Visual Studio Code, PyCharm, Eclipse).
+
+**LATIHAN 2.Lakukan instalasi IDE**
+
+- Langkah-langkah Instalasi Visual Studio Code di Windows: Unduh Visual Studio Code:
+  - Kunjungi situs resmi Visual Studio Code di https://code.visualstudio.com/. Klik tombol Download for Windows untuk mengunduh installer. Jalankan Installer:
+  - Setelah unduhan selesai, buka file VSCodeSetup-x64-.exe yang telah diunduh. Klik Run untuk memulai proses instalasi. Pilih Pengaturan Instalasi:
+  - Pilih pengaturan yang sesuai pada setiap layar yang muncul, biasanya Anda dapat memilih pengaturan default: Accept the agreement → Pilih I accept the agreement. Tentukan folder instalasi (default sudah sesuai). Pilih untuk membuat shortcut di desktop jika diinginkan. Pilih untuk menambahkan VS Code ke PATH (direkomendasikan untuk kealui terminal). Mulai Instalasi:
+  - Klik Install untuk memulai proses instalasi. Tunggu beberapa menit sampai proses instalasi selesai. Selesai:
+  - Setelah instalasi selesai, klik Finish dan Visual Studio Code akan terbuka secara otomatis. Anda juga bisa menjalankan VS Code kapan saja dari shortcut di desktop atau melalui Start Menu.
+ 
+**LATIHAN 3**
+- Penjelasan Program "Hello World!" dalam Bahasa C
+  - `#include <stdio.h>`
+     - `#include` adalah sebuah preprocessor directive yang memberi tahu kompiler untuk menyertakan file header eksternal ke dalam program.
+     - `<stdio.h>` adalah file header standar dalam bahasa C yang menyediakan deklarasi untuk fungsi-fungsi input dan output dasar, seperti printf, scanf, dan lainnya.
+       > Dengan menyertakan <stdio.h>, program dapat menggunakan fungsi printf untuk menampilkan output ke layar.
+
+  - `int main()`
+    - `int` menunjukkan bahwa fungsi main akan mengembalikan sebuah nilai bertipe data int (integer), yang umumnya digunakan untuk memberi informasi status eksekusi program kembali ke sistem operasi.
+    - `main()` adalah fungsi utama (entry point) dari sebuah program C. Saat program dijalankan, eksekusi dimulai dari fungsi main.
+      > Dalam program C, setiap program harus memiliki satu fungsi main() sebagai titik awal eksekusi. Program akan berakhir setelah mencapai return 0; di akhir fungsi main.
+
+  - `{ }` (Blok kode)
+    - `{` dan `}` adalah tanda kurung kurawal yang digunakan untuk membungkus blok kode.
+    - Dalam bahasa C, setiap pernyataan yang berada di dalam blok ini akan dijalankan secara berurutan saat `fungsi main()` dipanggil. Semua pernyataan di dalam blok `{ }` ini adalah bagian dari `fungsi main()`.
+
+  - `printf("Hello World!")`
+    - `printf` adalah fungsi yang digunakan untuk menampilkan output ke layar. Fungsi ini berasal dari file header `stdio.h`.
+    - `"Hello World!"` adalah string literal yang ingin dicetak ke layar. String ini berada di dalam tanda kutip ganda (""), yang menandakan bahwa itu adalah sebuah teks. Dengan perintah ini, program akan menampilkan pesan "Hello World!" di layar saat dijalankan.
+
+  - `return 0;`
+    - return digunakan untuk mengembalikan nilai dari sebuah fungsi.
+    - Dalam hal ini, nilai yang dikembalikan adalah 0, yang menunjukkan bahwa program telah berhasil dieksekusi tanpa kesalahan.
+    - Ketika `return 0;` dijalankan, program mengakhiri eksekusinya dan memberi tahu sistem operasi bahwa program selesai dengan sukses.
 
 # <img src="https://media.giphy.com/media/IOaLEhOlGiuwDRqgul/giphy.gif" width="50" height="50"> Modul 2 (Pemograman Dasar C)  
 
@@ -87,7 +147,9 @@ Mata Kuliah: Algoritma Permograman
       - Fungsi `puts()`:  adalah fungsi untuk menampilkan output. Fungsi ini juga terdapat pada library stdio.h. Perbedaanya dengan printf(), fungsi puts() tidak memerlukan format.
         > Contoh tampilan:  puts("*teks yang akan ditampilkan*");      
 
-
+<div align="center">
+<img src="https://media.giphy.com/media/59Lio6mUuLS45T9rpG/giphy.gif" width="350" height="350" />
+</div>
 
 # <img src="https://media.giphy.com/media/x4txkarjMusRtuulwM/giphy.gif?cid=ecf05e47q5vz7rij0nuuk717fxigne54an20rqysgacm6adc&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="50" height="50"> Modul 3 (Variable, Konstanta dan Tipe Data) 
 
@@ -117,6 +179,10 @@ Mata Kuliah: Algoritma Permograman
      - menggunakan `#define`
      - menggunakan `const`
        > perbedaan dari keduanya adalah #define tidak perlu menuliskan tipe data, sedangkan const harus. Pada #define tidak membutuhkan titik koma di akhir, sedangkan pada const kita harus menuliskan titik koma. Posisi penulisan untuk #define dan const bisa ditulis di dalam main() maupun di luar.
+
+<div align="center">
+<img src="https://media.giphy.com/media/kGL0anhVOqrI05x0Ju/giphy.gif" width="350" height="350" />
+</div>
        
 # <img src="https://media.giphy.com/media/fogCm9SiQeL6ucIHCy/giphy.gif?cid=ecf05e47yxlu2labhqob8lu316qup3na2gmwaxe2t7ajzc5p&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="50" height="50"> Modul 4 (Operator)  
 
@@ -182,6 +248,9 @@ Mata Kuliah: Algoritma Permograman
    - Increment `(++)` (untuk menambah 1)
    - Decrement `(--)` (untuk mengurangi 1)
 
+<div align="center">
+<img src="https://media.giphy.com/media/CH20MLdNIAiAtMbnVj/giphy.gif" width="350" height="350" />
+</div>
 
 # <img src="https://media.giphy.com/media/FRPRLVXkKp5Xuqs2eK/giphy.gif?cid=ecf05e47q5vz7rij0nuuk717fxigne54an20rqysgacm6adc&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="50" height="50"> Modul 5 (Flow Control - Decision Making)  
 
@@ -212,6 +281,9 @@ Mata Kuliah: Algoritma Permograman
 7. Percabangan Bersarang
   - Percabangan bersarang atau `nested if` adalah jenis algoritma yang memiliki percabangan di dalam percabangan. Percabangan bersarang digunakan untuk membuat percabangan program yang kompleks.
 
+<div align="center">
+<img src="https://media.giphy.com/media/MrQSRHN4APA5cEw6a2/giphy.gif" width="350" height="350" />
+</div>
 
 # <img src="https://media.giphy.com/media/dbDbUCnK9QBDg3Yor3/giphy.gif" width="50" height="50"> Modul 6 (Flow Control - Looping)  
 
@@ -242,7 +314,10 @@ Mata Kuliah: Algoritma Permograman
 5. Perulangan Bersarang `Nested Loop`
    - nested loop atau perulangan bersarang atau perulangan di dalam perualangan. adalah apabila pada blok statement perulangan terdapat perulangan lagi.
      > Contohnya; perulangan `for(int i = 0; i < 4; i++)` yang di dalamnya terdapat perulangan `for(int j = 0; j <= i; j++)`.
-  
+
+<div align="center">
+<img src="https://media.giphy.com/media/UfoxjyhDp5lghxvaDT/giphy.gif" width="200" height="200" />
+</div>
      
 # <img src="https://media.giphy.com/media/ggpoVsIg0LwtHfTBEY/giphy.gif" width="50" height="50"> Modul 7 (Array)  
 
@@ -300,7 +375,10 @@ Mata Kuliah: Algoritma Permograman
      - `strcmp()`: Fungsi strcmp() digunakan untuk membandingkan string dengan string yang lainnya.
 
                       strcmp(s1, s2);
-     
+
+<div align="center">
+<img src="https://media.giphy.com/media/XPtHPWgKXRg0hhN1Od/giphy.gif?cid=ecf05e47e3v9b8qhcjdj3ephryax8n7mdjtkne1yv8qqj7s2&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="350" height="350" />
+</div>
    
 # <img src="https://media.giphy.com/media/zIN8NHSfum1NkCkNgI/giphy.gif?cid=ecf05e478xcf5kl7v7clt8hqrp06cfs6xdsyspb824fn00ln&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="50" height="50"> Modul 8 (Fungsi dan Prosedur)  
 
@@ -425,6 +503,9 @@ Mata Kuliah: Algoritma Permograman
               printf("isi variabel angka = %d\n", angka); // mencetak isi variabel setelah fungsi dipanggil
            }
 
+<div align="center">
+<img src="https://media.giphy.com/media/lM4LRVZcawbj39IHhu/giphy.gif" width="350" height="350" />
+</div>
 
 # <img src="https://media.giphy.com/media/6rNcvmYFRmK3mfm0Ot/giphy.gif?cid=ecf05e47yxlu2labhqob8lu316qup3na2gmwaxe2t7ajzc5p&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="50" height="50"> Modul 9 (Pointer)  
 
@@ -516,6 +597,10 @@ Mata Kuliah: Algoritma Permograman
                   }
 
       > Pada program ini terdapat dua variabel untuk struct Player, yakni `player` dan `player1`. Variabel `player1` akan menjadi pointer untuk mengakses data pada `player`.
+
+<div align="center">
+<img src="https://media.giphy.com/media/kGslXIWC8NTa6LWRaR/giphy.gif" width="350" height="350" />
+</div>
 
 # <img src="https://media.giphy.com/media/ilRltVUHwX18lnOPMM/giphy.gif?cid=ecf05e478xcf5kl7v7clt8hqrp06cfs6xdsyspb824fn00ln&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="50" height="50"> Modul 10 (Enumerasi dan Structure)  
 
@@ -619,6 +704,10 @@ Mata Kuliah: Algoritma Permograman
                        printf("\nRoll: %d", s.age);
                     }
 
+
+<div align="center">
+<img src="https://media.giphy.com/media/hWB5JhRdBbuKtoH4Ff/giphy.gif" width="350" height="350" />
+</div>
       
 # <img src="https://media.giphy.com/media/0bW6yseaFOR0i4evMs/giphy.gif" width="50" height="50"> Modul 11 (File Handling in C)  
 
@@ -671,6 +760,10 @@ Mata Kuliah: Algoritma Permograman
            FILE *fptr = fopen("file.txt", "w");
            fputs("Ini baris pertama.\n", fptr);
 
+
+<div align="center">
+<img src="https://media.giphy.com/media/M0mAms22oTSsHoxX6H/giphy.gif" width="350" height="350" />
+</div>
 ---
 
 <div align="center">
