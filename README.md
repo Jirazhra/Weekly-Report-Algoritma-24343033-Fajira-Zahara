@@ -318,6 +318,89 @@ Mata Kuliah: Algoritma Permograman
 </div>
 
 ## Tugas dan latihan 
+**LATIHAN 1**
+- Penjelasan program konversi mata uang dari Rupiah (IDR) ke Dollar AS (USD).
+  - Deklarasi Variabel
+    - `mata_uang_rupiah` Variabel bertipe `float` yang akan menyimpan jumlah mata uang Rupiah yang dimasukkan oleh pengguna.
+    - `kurs` Variabel bertipe `const float` yang menyimpan nilai kurs atau nilai tukar Rupiah terhadap Dollar. Dalam program ini, kurs yang digunakan adalah 1 Dollar = 14.250 Rupiah.
+    - `mata_uang_dollar` Variabel bertipe `float` yang akan menyimpan hasil konversi dari Rupiah ke Dollar.
+      
+  - Input Jumlah Rupiah
+    - Program menampilkan pesan yang meminta pengguna untuk memasukkan jumlah uang dalam Rupiah.
+    - `scanf` digunakan untuk membaca input dari pengguna dan menyimpannya dalam variabel `mata_uang_rupiah`.
+      
+  - Proses Konversi
+    - Program melakukan perhitungan konversi dari Rupiah ke Dollar. Caranya adalah dengan membagi jumlah Rupiah yang dimasukkan oleh nilai `kurs` (14.250). Hasil dari pembagian ini akan disimpan dalam variabel `mata_uang_dollar`.
+      
+  - Menampilkan Hasil Konversi
+    - Program menampilkan hasil konversi dalam format angka dengan dua angka desimal menggunakan format spesifier `%.2f`. Variabel `mata_uang_dollar` akan dicetak sebagai hasil konversi dari Rupiah ke Dollar.
+      
+  - Return Statement
+    - Program mengakhiri eksekusinya dan mengembalikan nilai `0`, yang menunjukkan bahwa program telah berjalan dengan baik.
+      
+  - Output program
+ 
+          mata uang dollar: 7.01
+
+**LATIHAN 2**
+- Penjelasan program konversi suhu
+  - Deklarasi Variabel
+    - `C` Variabel bertipe `float` yang akan menyimpan suhu dalam satuan Celcius yang dimasukkan oleh pengguna.
+    - `K` Variabel bertipe `float` yang akan menyimpan hasil konversi suhu dalam satuan Kelvin.
+    - `F` Variabel bertipe `float` yang akan menyimpan hasil konversi suhu dalam satuan Fahrenheit.
+    - `R` Variabel bertipe `float` yang akan menyimpan hasil konversi suhu dalam satuan Reamur.
+      
+  - Input Suhu dalam Celcius
+    - Program meminta pengguna untuk memasukkan suhu dalam satuan Celcius.
+    - Fungsi `scanf` digunakan untuk membaca input dari pengguna dan menyimpannya dalam variabel `C`.
+
+  - Konversi Suhu ke Satuan Lain
+    - Konversi ke Kelvin: Suhu dalam Celcius dikonversi ke Kelvin dengan rumus `K=C+273.15`
+    - Konversi ke Fahrenheit: Suhu dalam Celcius dikonversi ke Fahrenheit dengan rumus `F=(C×1.8)+32`
+    - Konversi ke Reamur: Suhu dalam Celcius dikonversi ke Reamur dengan rumus `R=C×0.8`
+      
+  - Menampilkan Hasil Konversi
+    - Program menampilkan hasil konversi suhu dalam tiga satuan suhu:
+      - Kelvin: Menampilkan suhu dalam Kelvin dengan dua angka desimal `(%.2f)`.
+      - Fahrenheit: Menampilkan suhu dalam Fahrenheit dengan dua angka desimal.
+      - Reamur: Menampilkan suhu dalam Reamur dengan dua angka desimal.
+     - Setiap hasil konversi dipisahkan oleh baris baru `(\n)`.
+       
+  - Return Statement
+    - Program mengakhiri eksekusinya dengan mengembalikan nilai `0`, yang menunjukkan bahwa program berjalan dengan baik.
+      
+  - Output program
+    - jika kita memasukkan suhu  25°C, maka hasil outputnya akan seperti ini:
+
+            Suhu dalam Kelvin: 298.15
+            Suhu dalam Fahrenheit: 77.00
+            Suhu dalam Reamur: 20.00
+
+***LATIHAN 3**
+-  Penjelasan program menghitung volume dan luas permukaan bola
+  - Deklarasi Variabel
+    - `d` Variabel bertipe `float` yang menyimpan diameter bola. Dalam hal ini, diameter yang diberikan adalah 12.
+    - `phi` Konstanta bertipe `float` yang menyimpan nilai pi (π), yang digunakan dalam perhitungan matematika untuk volume dan luas permukaan bola. Nilai yang digunakan adalah 3.14.
+    - `r` Variabel bertipe `float` yang menyimpan jari-jari bola. Karena jari-jari bola adalah setengah dari diameter, maka jari-jari dihitung dengan rumus `𝑟 = 𝑑/2`, sehingga `𝑟 = 12 × 0.5 = 6`
+    - volume: Variabel bertipe float yang akan menyimpan hasil perhitungan volume bola. Rumus volume bola adalah `𝑉 = 4/3 × 𝜋 × 𝑟^3` Dalam hal ini, volume dihitung dengan `4/3 × 3.14 × 6^3`
+    - luas: Variabel bertipe float yang akan menyimpan hasil perhitungan luas permukaan bola. Rumus luas permukaan bola adalah `A = 4 × π × r^2`. Dalam hal ini, luas permukaan dihitung dengan `4 × 3.14 × 6^2`
+ 
+  - Perhitungan Volume dan Luas
+    - Program melakukan dua perhitungan matematika:
+      - Volume Bola: `V = 4/3 x 6^3 = 4.0/3.0 x 3.14 x 216 = 1809.6`
+      - Luas Permukaan Bola: `A = 4 x 3,14 x 6^2 = 4 x 3.14 x 36 = 452.16`
+        
+  - Menampilkan Output
+    - Program menampilkan hasil perhitungan volume dan luas permukaan bola dengan dua angka desimal menggunakan format spesifier `%.2f`.
+      
+  - Return Statement
+    - Program mengakhiri eksekusinya dengan mengembalikan nilai `0`, yang menunjukkan bahwa program berjalan dengan baik.
+      
+  - Output program
+
+         volume: 1809.60
+         luas: 452.16
+
        
 # <img src="https://media.giphy.com/media/fogCm9SiQeL6ucIHCy/giphy.gif?cid=ecf05e47yxlu2labhqob8lu316qup3na2gmwaxe2t7ajzc5p&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="50" height="50"> Modul 4 (Operator)  
 
