@@ -1288,17 +1288,6 @@ Mata Kuliah: Algoritma Permograman
                   Saldo Anda saat ini adalah: Rp 50000.00     // Output 
          
            2. Hattori hanya bisa melakukan penarikan sebesar 100.000, agar penarikan berhasil.
-                             
-                  === ATM ===
-                  1. Cek Saldo
-                  2. Setoran
-                  3. Penarikan Tunai
-                  4. Keluar
-                  Pilih menu: 1
-                  4. Keluar
-                  Pilih menu: 2
-                  Masukkan jumlah setoran: Rp 100000
-                  Setoran sebesar Rp 100000.00 berhasil.     // Output 
                   
                   === ATM ===
                   1. Cek Saldo
