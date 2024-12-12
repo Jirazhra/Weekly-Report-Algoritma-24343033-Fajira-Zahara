@@ -7,12 +7,12 @@ int main()
 
     // main menu
     printf("===kalkulator sederhana===\n");
-    printf("a.penjumlahan\n");
-    printf("b.pengurangan\n");
-    printf("c.perkalian\n");
-    printf("d.pembagian\n");
-    printf("e.hasil bagi\n");
-    printf("pilih operaasi (a-e): ");
+    printf("1.penjumlahan\n");
+    printf("2.pengurangan\n");
+    printf("3.perkalian\n");
+    printf("4.pembagian\n");
+    printf("5.hasil bagi\n");
+    printf("pilih operaasi (1-5): ");
     scanf("%d", &pilihan);
 
     // meminta input angka
