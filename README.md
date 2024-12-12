@@ -474,19 +474,112 @@ Mata Kuliah: Algoritma Permograman
 **LATIHAN 1**
 - penjelasan program data nilai mahasiswa
   - Deklarasi Variabel
-    - int nilai_presensi, nilai_praktek, nilai_UTS, nilai_UAS;
-      - nilai_presensi: Variabel untuk menyimpan nilai presensi.
-      - nilai_praktek: Variabel untuk menyimpan nilai praktek.
-      - nilai_UTS: Variabel untuk menyimpan nilai UTS.
-      - nilai_UAS: Variabel untuk menyimpan nilai UAS.
+    - `nilai_presensi`: Variabel untuk menyimpan nilai presensi.
+    - `nilai_praktek`: Variabel untuk menyimpan nilai praktek.
+    - `nilai_UTS`: Variabel untuk menyimpan nilai UTS.
+    - `nilai_UAS`: Variabel untuk menyimpan nilai UAS.
+      
   - Pengisian Nilai
+    - Nilai-nilai awal untuk masing-masing komponen ditetapkan langsung menggunakan operator penugasan `(=)`. Nilai-nilai ini adalah:
+      - **Presensi**: 85
+      - **Praktek**: 65
+      - **UTS**: 80
+      - **UAS**: 75
+
   - Menampilkan Nilai Sebelum Konversi
+    - Program menampilkan nilai awal untuk masing-masing komponen dengan menggunakan fungsi `printf` dan format spesifier `%d` untuk menampilkan nilai integer.
+
   - Menghitung Nilai Akhir Berdasarkan Bobot
+    - Setiap komponen nilai dikalikan dengan bobot yang sesuai:
+      - **Nilai presensi**: Dikalikan dengan 0.10 (10%).
+      - **Nilai praktek**: Dikalikan dengan 0.20 (20%).
+      - **Nilai UTS**: Dikalikan dengan 0.30 (30%).
+      - **Nilai UAS**: Dikalikan dengan 0.40 (40%).
+        > Dengan demikian, nilai yang dihasilkan adalah hasil dari perhitungan berdasarkan bobot yang diberikan, bukan nilai asli.
+        
   - Menampilkan Hasil Konversi Nilai
+    - Program menampilkan nilai yang telah dikonversi berdasarkan bobot yang telah dihitung pada langkah sebelumnya.
+    - Fungsi `printf` digunakan untuk mencetak nilai masing-masing komponen yang telah dikonversi.
+      
   - Return Statement
+    - Di dalam fungsi `main`, `return` tanpa nilai tidak diperlukan, karena tipe kembalian `void` (yang berarti tidak ada nilai yang dikembalikan). Program hanya mengakhiri eksekusinya di sini.
+      
   - Output program
+    - Misalkan nilai yang dimasukkan adalah:
+      - Presensi: 85
+      - Praktek: 65
+      - UTS: 80
+      - UAS: 75
+    - Hasil perhitungan konversi nilai adalah:
+      - Nilai presensi: 85×0.10=8.585 \times 0.10 = 8.585×0.10=8.5
+      - Nilai praktek: 65×0.20=13.065 \times 0.20 = 13.065×0.20=13.0
+      - Nilai UTS: 80×0.30=24.080 \times 0.30 = 24.080×0.30=24.0
+      - Nilai UAS: 75×0.40=30.075 \times 0.40 = 30.075×0.40=30.0
+    - Maka hasil output yang ditampilkan adalah:
+      
+                  nilai_presensi = 85
+                  nilai_praktek = 65
+                  nilai_UTS = 80
+                  nilai_UAS = 75
+                  ---------------------
+                  nilai presensi: 8
+                  nilai praktek: 13
+                  nilai UTS: 24
+                  nilai UAS: 30
+      
 **LATIHAN 2**
+- Penjelasan Program Kasir barang
+  - Deklarasi Variabel
+    - `nama_pembeli[100]`: Array bertipe `char` yang menyimpan nama pembeli dengan panjang maksimal 100 karakter.
+    - `nama_barang[100]`: Array bertipe `char` yang menyimpan nama barang dengan panjang maksimal 100 karakter.
+    - `harga_barang_satuan`: Variabel bertipe `int` yang menyimpan harga barang per satuan (misalnya harga per item).
+    - `jumlah_barang_yang_dibeli`: Variabel bertipe `int` yang menyimpan jumlah barang yang dibeli oleh pembeli.
+    - `harga_total`: Variabel bertipe `int` yang menyimpan total harga pembelian (harga barang satuan dikali jumlah barang yang dibeli).
+  - Input nama pembeli
+    - Program meminta pengguna untuk memasukkan nama pembeli dan menggunakan `fgets` untuk membaca input, yang memungkinkan membaca seluruh kalimat termasuk spasi (berbeda dengan `scanf` yang hanya membaca sampai spasi).
+    - `sizeof(nama_pembeli)` memastikan bahwa jumlah karakter yang dibaca tidak melebihi ukuran array `nama_pembeli`.
+
+  - Input nama barang
+    - Program meminta pengguna untuk memasukkan nama barang yang dibeli dengan cara yang sama seperti pada input nama pembeli.
+      
+  - Input harga satuan barang
+    - Program meminta pengguna untuk memasukkan harga satuan barang. Nilai yang dimasukkan akan disimpan dalam variabel `harga_barang_satuan` dengan tipe data `integer`.
+
+  - Input jumlah barang yang dibeli
+    - Program meminta pengguna untuk memasukkan jumlah barang yang dibeli. Nilai yang dimasukkan akan disimpan dalam variabel    `jumlah_barang_yang_dibeli`.
+      
+  - Perhitungan harga total
+    - Program menghitung total harga dengan mengalikan harga barang satuan (`harga_barang_satuan`) dengan jumlah barang yang dibeli (`jumlah_barang_yang_dibeli`).
+
+  - Menampilkan hasil
+    - Program menampilkan hasil perhitungan dengan format yang rapi:
+      - Nama pembeli
+      - Nama barang
+      - Harga barang satuan
+      - Jumlah barang yang dibeli
+      - Total harga pembelian
+        
+  - Output program
+    - Misalkan pengguna memasukkan input berikut:
+      - Nama pembeli: "Terry"
+      - Nama barang: "Gitar"
+      - Harga barang satuan: 500000
+      - Jumlah barang yang dibeli: 3
+    - Program akan menampilkan output sebagai berikut:
+      
+            masukkan nama_pembeli: Terry
+            masukkan nama_barang: Gittar
+            masukkan harga barang satuan: 500000
+            masukkan jumlah barang yang dibeli: 3
+            -------------------------
+            nama pembeli: Terry
+            nama barang: Gitar
+            harga barang satuan: 500000
+            jumlah barang yang dibeli: 3
+            harga total: 1500000
+      
 **LATIHAN 3**
+
 **LATIHAN 4**
 
 # <img src="https://media.giphy.com/media/FRPRLVXkKp5Xuqs2eK/giphy.gif?cid=ecf05e47q5vz7rij0nuuk717fxigne54an20rqysgacm6adc&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="50" height="50"> Modul 5 (Flow Control - Decision Making)  
