@@ -714,6 +714,7 @@ Mata Kuliah: Algoritma Permograman
       
   - Output program
     - Penjumlahan
+      - Input
       
             === Kalkulator Sederhana ===
             1. Penjumlahan
@@ -724,9 +725,13 @@ Mata Kuliah: Algoritma Permograman
             Pilih operasi (1-5): 1
             Masukkan angka pertama: 12
             Masukkan angka kedua: 13
+        
+      - Output
+        
             Hasil Penjumlahan: 25.00
 
     - Pengurangan
+      - Input
 
             === Kalkulator Sederhana ===
             1. Penjumlahan
@@ -737,9 +742,13 @@ Mata Kuliah: Algoritma Permograman
             Pilih operasi (1-5): 2
             Masukkan angka pertama: 14
             Masukkan angka kedua: 15
+
+      - Output
+        
             Hasil Pengurangan: -1.00
 
     - Perkalian
+      - Input
 
             === Kalkulator Sederhana ===
             1. Penjumlahan
@@ -750,9 +759,13 @@ Mata Kuliah: Algoritma Permograman
             Pilih operasi (1-5): 3
             Masukkan angka pertama: 23
             Masukkan angka kedua: 2
+
+      - Output
+        
             Hasil Perkalian: 46.00
 
     - Pembagian
+      - Input
  
             === Kalkulator Sederhana ===
             1. Penjumlahan
@@ -763,9 +776,13 @@ Mata Kuliah: Algoritma Permograman
             Pilih operasi (1-5): 4
             Masukkan angka pertama: 32
             Masukkan angka kedua: 4
+
+      - Output
+        
             Hasil Pembagian: 8.00
  
     - Hasil bagi
+      - Input
 
             === Kalkulator Sederhana ===
             1. Penjumlahan
@@ -776,6 +793,9 @@ Mata Kuliah: Algoritma Permograman
             Pilih operasi (1-5): 5
             Masukkan angka pertama: 56
             Masukkan angka kedua: 32
+
+      - Output
+        
             Hasil Bagi: 1   
       
 
@@ -829,13 +849,13 @@ Mata Kuliah: Algoritma Permograman
     - Pilihan 1: Luas Permukaan Bola. Rumus:
       > 𝐿 = 4 × 𝜋 × 𝑟2
       - di mana:
-       - 𝑟 : Jari-jari bola
-       - 𝜋 : 3.14 (didefinisikan sebagai konstanta dalam program
+        - 𝑟 : Jari-jari bola
+        - 𝜋 : 3.14 (didefinisikan sebagai konstanta dalam program
 
     - Pilihan 2: Luas Permukaan Kubus. Rumus:
       > 𝐿 = 6 × 𝑠2
       - di mana:
-       - s: Panjang sisi kubus
+        - s: Panjang sisi kubus
      
     - Pilihan 3: Luas Permukaan Balok. Rumus:
       > 𝐿 = 2 × (𝑝 × 𝑙 + 𝑝 × 𝑡 + 𝑙 × 𝑡)
@@ -847,8 +867,8 @@ Mata Kuliah: Algoritma Permograman
     - Pilihan 4: Luas Permukaan Tabung. Rumus:
       > 𝐿 = 2 × 𝜋 × 𝑟 × (𝑟 + 𝑡)
       - di mana:
-       - r: Jari-jari alas tabung
-       - 𝑡 : Tinggi tabung
+        - r: Jari-jari alas tabung
+        - 𝑡 : Tinggi tabung
         
   - Alur Program
     1. Menu Utama: Program menampilkan menu pilihan (1-4) untuk memilih bangun ruang.
