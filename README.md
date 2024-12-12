@@ -511,10 +511,10 @@ Mata Kuliah: Algoritma Permograman
       - UTS: 80
       - UAS: 75
     - Hasil perhitungan konversi nilai adalah:
-      - Nilai presensi: 85×0.10=8.585 \times 0.10 = 8.585×0.10=8.5
-      - Nilai praktek: 65×0.20=13.065 \times 0.20 = 13.065×0.20=13.0
-      - Nilai UTS: 80×0.30=24.080 \times 0.30 = 24.080×0.30=24.0
-      - Nilai UAS: 75×0.40=30.075 \times 0.40 = 30.075×0.40=30.0
+      - Nilai presensi: 85×0.10=8.5
+      - Nilai praktek: 65×0.20=13.0
+      - Nilai UTS: 80×0.30=24.0
+      - Nilai UAS: 75×0.40=30.0
     - Maka hasil output yang ditampilkan adalah:
       
                   nilai_presensi = 85
@@ -579,8 +579,60 @@ Mata Kuliah: Algoritma Permograman
             harga total: 1500000
       
 **LATIHAN 3**
+- Penjelasan program rental film
+  - Deklarasi variabel
+    - `jam_sewa`: Variabel bertipe `int` yang menyimpan jumlah jam penyewaan. Dalam hal ini, jam sewa yang dimasukkan adalah 3 jam.
+    - `tarif_awal`: Variabel bertipe `float` yang menyimpan tarif untuk jam pertama. Tarif ini adalah 15.000.
+    - `tarif_berikutnya`: Variabel bertipe `float` yang menyimpan tarif untuk setiap jam berikutnya. Tarif berikutnya adalah 50% dari tarif awal, yaitu 15000 × 0.50 =7500.
+    - `tarif_akhir`: Variabel bertipe `float` yang akan menyimpan total biaya penyewaan setelah dihitung.
+      
+  - Perhitungan tarif akhir
+    - **Perhitungan biaya**: Tarif untuk jam pertama adalah `tarif_awal`, yang sudah diketahui sebesar 15.000.
+    - **Biaya untuk jam berikutnya** dihitung dengan mengalikan jumlah jam yang lebih dari satu `(jam_sewa − 1)` dengan `tarif_berikutnya`.
+      - Misalnya, jika jam sewa adalah 3 jam, maka perhitungan biaya adalah:
+        > `tarif_akhir` = 15000 + (3 − 1) × 7500
+                      = 15000 + 2 × 7500
+                      = 15000 + 15000
+                      = 30000
+        
+  - Menampilkan Hasil
+    - Program menampilkan total biaya yang harus dibayar dalam format mata uang Indonesia (Rp), dengan *dua angka di belakang koma* untuk menunjukkan format *desimal*.
+      
+  - Output program
+    - Jika jam_sewa adalah 3 jam, hasil perhitungan akan menampilkan
+   
+            total yang harus dibayar: Rp 30000.00
 
 **LATIHAN 4**
+- Penjelasan program konversi waktu
+  - Deklarasi Variabel
+    - **jam**: Variabel bertipe `int` untuk menyimpan jumlah jam.
+    - **menit**: Variabel bertipe `int` untuk menyimpan jumlah menit.
+    - **detik**: Variabel bertipe `int` untuk menyimpan jumlah detik yang diberikan oleh pengguna dan kemudian digunakan dalam perhitungan.
+
+  - Input Jumlah Detik
+    - Program meminta pengguna untuk memasukkan *jumlah detik*. Nilai yang dimasukkan disimpan dalam `variabel detik` menggunakan `scanf`. Format `%i` digunakan untuk membaca input integer.
+      
+  - Mengonversi Detik ke Jam, Menit, dan Detik
+    - Mengonversi Detik ke Jam
+      - Jumlah jam dihitung dengan membagi jumlah detik dengan `3600` (jumlah detik dalam satu jam). Misalnya, jika detik yang dimasukkan adalah 3665 detik, maka hasil pembagian 3665 / 3600 adalah 1 jam.
+    - Mengonversi Detik ke menit
+      - Pertama, kita menghitung `total menit` dengan membagi detik dengan `60`. Kemudian, kita menggunakan operasi modulus (`% 60`) untuk mendapatkan sisa menit setelah menghitung jam. Ini memastikan bahwa jumlah menit yang ditampilkan berada dalam rentang 0 hingga 59.
+    - Mengonversi sisa detik
+      - Setelah menghitung jam dan menit, kita gunakan operasi modulus (`% 60`) untuk menghitung sisa detik yang tidak bisa dibagi menjadi jam atau menit.
+        
+  - Menampilkan Hasil Konversi
+    - Program menampilkan hasil konversi dalam format `jam`, `menit`, `detik` dengan menggunakan `printf`.
+    - Format `%i` digunakan untuk menampilkan nilai `integer` dari variabel `jam`, `menit`, dan `detik`.
+      
+  - Output program
+    - Misalkan input yang dimasukkan adalah 3700 detik. Maka langkah-langkah konversinya adalah:
+      - Jam: 3700/3600 = 1 jam
+      - Menit: (3700 / 60) %60 = 61 %60 = 1 menit
+      - Detik: 3700 %60 = 40 detik
+    - Maka output program akan menjadi
+   
+          1 Jam, 1 Menit, 40 Detik
 
 # <img src="https://media.giphy.com/media/FRPRLVXkKp5Xuqs2eK/giphy.gif?cid=ecf05e47q5vz7rij0nuuk717fxigne54an20rqysgacm6adc&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="50" height="50"> Modul 5 (Flow Control - Decision Making)  
 
