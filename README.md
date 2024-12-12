@@ -669,10 +669,350 @@ Mata Kuliah: Algoritma Permograman
 
 ## Tugas dan latihan 
 **LATIHAN 1**
-**LATIHAN 2**
-**LATIHAN 3**
-**LATIHAN 4** 
+- Penjelasan program kalkulator sederhana
+  - Deklarasi variabel
+    - `float angka_pertama, angka_kedua, hasil`: Variabel bertipe `float` digunakan untuk menyimpan angka pertama, angka kedua, dan hasil operasi aritmatika. `float` memungkinkan penyimpanan bilangan desimal.
+    - `int pilihan`: Variabel untuk menyimpan pilihan operasi pengguna. Tipe `int` dipilih karena angka pilihan adalah bilangan bulat.
+      
+  - Tampilan Menu dan Input Pilihan
+    - Tampilan menu mencantumkan opsi operasi yang tersedia:
+      - 1: Penjumlahan
+      - 2: Pengurangan
+      - 3: Perkalian
+      - 4: Pembagian
+      - 5: Pembagian Bulat
+    - Input pilihan menggunakan `scanf("%d", &pilihan)` untuk menyimpan angka pilihan ke variabel `pilihan`.
+      
+  - Input Angka
+    - Meminta pengguna memasukkan dua angka untuk operasi.
+    - Input angka disimpan dalam variabel `angka_pertama` dan `angka_kedua` menggunakan `scanf("%f", &angka)`.
 
+  - Switch Statement untuk Operasi
+    - `switch` digunakan untuk memilih operasi berdasarkan input pengguna (`pilihan`).
+    - Setiap `case` menangani satu operasi, seperti penjumlahan, pengurangan, perkalian, pembagian, atau pembagian bulat.
+      
+  - Penjelasan Setiap Operasi
+    - Penjumlahan (Case 1)
+      - Operasi `+` digunakan untuk menjumlahkan dua angka.
+      - Hasil ditampilkan dengan format dua angka desimal (`%.2f`).
+    - Pengurangan (Case 2)
+      - Operasi `-` mengurangkan angka kedua dari angka pertama.
+    - Perkalian (Case 3)
+      - Operasi `*` mengalikan dua angka.
+    - Pembagian (Case 4)
+      - Operasi `/` membagi angka pertama dengan angka kedua.
+      - Program memeriksa apakah `angka_kedua` nol untuk menghindari kesalahan pembagian dengan nol.
+    - Pembagian Bulat (Case 5)
+      - Pembagian bulat menggunakan `angka_pertama / angka_kedua` kemudian hasilnya dicasting ke `int` untuk membulatkan hasil ke bilangan bulat.
+      - Validasi pembagian dengan nol juga diterapkan.
+
+  - Penanganan Pilihan Tidak Valid
+    - Jika input tidak sesuai dengan pilihan 1-5, program menampilkan pesan error.
+      
+  - Akhir Program
+    - Program ditutup dengan `return 0;` untuk menandakan bahwa eksekusi berhasil.
+      
+  - Output program
+    - Penjumlahan
+      
+            === Kalkulator Sederhana ===
+            1. Penjumlahan
+            2. Pengurangan
+            3. Perkalian
+            4. Pembagian
+            5. Hasil Bagi
+            Pilih operasi (1-5): 1
+            Masukkan angka pertama: 12
+            Masukkan angka kedua: 13
+            Hasil Penjumlahan: 25.00
+
+    - Pengurangan
+
+            === Kalkulator Sederhana ===
+            1. Penjumlahan
+            2. Pengurangan
+            3. Perkalian
+            4. Pembagian
+            5. Hasil Bagi
+            Pilih operasi (1-5): 2
+            Masukkan angka pertama: 14
+            Masukkan angka kedua: 15
+            Hasil Pengurangan: -1.00
+
+    - Perkalian
+
+            === Kalkulator Sederhana ===
+            1. Penjumlahan
+            2. Pengurangan
+            3. Perkalian
+            4. Pembagian
+            5. Hasil Bagi
+            Pilih operasi (1-5): 3
+            Masukkan angka pertama: 23
+            Masukkan angka kedua: 2
+            Hasil Perkalian: 46.00
+
+    - Pembagian
+ 
+            === Kalkulator Sederhana ===
+            1. Penjumlahan
+            2. Pengurangan
+            3. Perkalian
+            4. Pembagian
+            5. Hasil Bagi
+            Pilih operasi (1-5): 4
+            Masukkan angka pertama: 32
+            Masukkan angka kedua: 4
+            Hasil Pembagian: 8.00
+ 
+    - Hasil bagi
+
+            === Kalkulator Sederhana ===
+            1. Penjumlahan
+            2. Pengurangan
+            3. Perkalian
+            4. Pembagian
+            5. Hasil Bagi
+            Pilih operasi (1-5): 5
+            Masukkan angka pertama: 56
+            Masukkan angka kedua: 32
+            Hasil Bagi: 1   
+      
+
+**LATIHAN 2**
+- Penjelasan program diskon toserba
+  -  Deklarasi variabel
+    - `nama_pembeli[70]`: Array untuk menyimpan nama pembeli, dengan panjang maksimum 70 karakter.
+    - `total_pembelian`: Variabel bertipe `float` untuk menyimpan total harga pembelian.
+    - `diskon`: Variabel `float` yang menyimpan jumlah diskon berdasarkan total pembelian.
+    - `total_setelah_diskon`: Variabel `float` yang menyimpan total pembayaran akhir setelah diskon dan cashback diterapkan.
+    - `cashback`: Variabel `float` yang menyimpan nilai cashback.
+      
+  -  Input dari Pengguna
+    - `fgets(nama_pembeli, sizeof(nama_pembeli), stdin);` Mengambil input nama pembeli dari pengguna.
+    - `scanf("%f", &total_pembelian);` Mengambil input total pembelian dalam bentuk angka desimal (`float`).
+      
+  -  Logika Diskon dan Cashback
+    - Diskon dihitung berdasarkan nilai total pembelian:
+      - Jika `total_pembelian <= 75000`: Diskon adalah 5% dari total pembelian.
+      - Jika `total_pembelian > 75000` dan `<= 125000`: Diskon adalah 15% dari total pembelian.
+      - Jika `total_pembelian > 125000`: Diskon adalah 25%, dan pelanggan mendapatkan cashback Rp 5.000.
+        
+  -  Menghitung Total Setelah Diskon
+    - Total pembayaran dihitung setelah diskon dikurangi dan cashback ditambahkan.
+      > total_setelah_diskon = total_pembelian - diskon + cashback;
+
+  -  Output program
+    - Program mencetak struk pembelian yang mencakup:
+      - Nama pembeli.
+      - Total pembelian.
+      - Nilai diskon.
+      - Cashback (jika ada).
+      - Total pembayaran setelah diskon dan cashback.
+    - Contoh output jika pelanggan belanja Rp 130.000:
+
+            === Struk Pembelian TOSERBA ===
+            Nama Pembeli: Soobin
+            Total Pembelian: Rp 130000.00
+            Diskon: Rp 32500.00
+            Cashback: Rp 5000.00
+            Total Setelah Diskon dan Cashback: Rp 102500.00
+
+**LATIHAN 3**
+- penjelasan program rumus menghitung bangun ruang
+  - Struktur Program
+    - **Menu utama**: Pengguna memilih bangun ruang yang diinginkan.
+    - **Switch-case**: Mengarahkan ke perhitungan luas permukaan sesuai pilihan.
+    - **Rumus matematika**: Menggunakan konstanta `PI` untuk perhitungan dengan lingkaran (bola/tabung).
+      
+  - Penjelasan Pilihan
+    - Pilihan 1: Luas Permukaan Bola. Rumus:
+      > 𝐿 = 4 × 𝜋 × 𝑟2
+      - di mana:
+       - 𝑟 : Jari-jari bola
+       - 𝜋 : 3.14 (didefinisikan sebagai konstanta dalam program
+
+    - Pilihan 2: Luas Permukaan Kubus. Rumus:
+      > 𝐿 = 6 × 𝑠2
+      - di mana:
+       - s: Panjang sisi kubus
+     
+    - Pilihan 3: Luas Permukaan Balok. Rumus:
+      > 𝐿 = 2 × (𝑝 × 𝑙 + 𝑝 × 𝑡 + 𝑙 × 𝑡)
+      - di mana:
+        - 𝑝 : Panjang balok
+        - 𝑙 : Lebar balok
+        - 𝑡 : Tinggi balok
+          
+    - Pilihan 4: Luas Permukaan Tabung. Rumus:
+      > 𝐿 = 2 × 𝜋 × 𝑟 × (𝑟 + 𝑡)
+      - di mana:
+       - r: Jari-jari alas tabung
+       - 𝑡 : Tinggi tabung
+        
+  - Alur Program
+    1. Menu Utama: Program menampilkan menu pilihan (1-4) untuk memilih bangun ruang.
+    2. Masukan Pengguna: Pengguna memasukkan dimensi yang diperlukan untuk menghitung luas permukaan.
+    3. Perhitungan: Menggunakan rumus matematika sesuai pilihan pengguna.
+    4. Hasil Output: Menampilkan luas permukaan dengan dua digit desimal.
+       
+  - Kasus Default
+    - Jika pengguna memasukkan angka selain 1-4, program menampilkan pesan: `Pilihan tidak valid!`
+      
+  - Analisis dan Peningkatan
+    - Konstanta PI:
+      - Program mendefinisikan 𝜋 = 3.14, tetapi lebih baik menggunakan konstanta bawaan C, `M_PI` (dari math.h) untuk nilai 𝜋 yang lebih presisi.
+    - Error Handling:
+      - Program saat ini tidak memvalidasi input negatif. Hal ini dapat diatasi dengan menambahkan validasi bahwa dimensi tidak boleh kurang dari nol.
+    - Penggunaan Modularitas:
+      - Setiap perhitungan dapat dipecah menjadi fungsi terpisah untuk memperjelas struktur program dan mempermudah pemeliharaan.
+        
+  - Output program
+    - Contoh 1: Luas Permukaan Bola
+      - Input
+        
+              === Hitung Luas Permukaan ===
+               1. Luas Permukaan Bola
+               2. Luas Permukaan Kubus
+               3. Luas Permukaan Balok
+               4. Luas Permukaan Tabung
+               Pilih bangun ruang (1-4): 1
+               Masukkan jari-jari bola: 7
+
+      - Output
+     
+              Luas Permukaan Bola: 615.75
+
+    - Contoh 2: Luas Permukaan Kubus
+      - Input
+        
+              === Hitung Luas Permukaan ===
+               1. Luas Permukaan Bola
+               2. Luas Permukaan Kubus
+               3. Luas Permukaan Balok
+               4. Luas Permukaan Tabung
+               Pilih bangun ruang (1-4): 2
+               Masukkan panjang sisi kubus: 5
+
+      - Output
+     
+              Luas Permukaan Kubus: 150.00
+
+    - Contoh 3: Luas Permukaan Balok
+      - Input
+        
+              === Hitung Luas Permukaan ===
+               1. Luas Permukaan Bola
+               2. Luas Permukaan Kubus
+               3. Luas Permukaan Balok
+               4. Luas Permukaan Tabung
+               Pilih bangun ruang (1-4): 3
+               Masukkan panjang balok: 8
+               Masukkan lebar balok: 4
+               Masukkan tinggi balok: 3
+
+      - Output
+     
+              Luas Permukaan Balok: 136.00
+
+    - Contoh 4: Luas Permukaan Tabung
+      - Input
+        
+              === Hitung Luas Permukaan ===
+               1. Luas Permukaan Bola
+               2. Luas Permukaan Kubus
+               3. Luas Permukaan Balok
+               4. Luas Permukaan Tabung
+               Pilih bangun ruang (1-4): 4
+               Masukkan jari-jari alas tabung: 7
+               Masukkan tinggi tabung: 10
+
+      - Output
+     
+              Luas Permukaan Tabung: 748.00
+
+    - Contoh 5: Pilihan Tidak Valid
+      - Input
+        
+             === Hitung Luas Permukaan ===
+             1. Luas Permukaan Bola
+             2. Luas Permukaan Kubus
+             3. Luas Permukaan Balok
+             4. Luas Permukaan Tabung
+             Pilih bangun ruang (1-4): 5
+
+      - Output
+     
+             Pilihan tidak valid!                  
+    
+**LATIHAN 4**
+- Penjelasan program menghitung nilai akhir mahasiswa
+  - Input Data
+    - Program meminta pengguna untuk memasukkan nilai kehadiran, tugas, UTS, dan UAS. Nilai-nilai ini diharapkan berada dalam rentang 0-100.
+      
+            printf("Masukkan nilai kehadiran (0-100): ");
+            scanf("%f", &nilai_Kehadiran);
+            
+            printf("Masukkan nilai tugas (0-100): ");
+            scanf("%f", &nilai_tugas);
+            
+            printf("Masukkan nilai UTS (0-100): ");
+            scanf("%f", &nilai_UTS);
+            
+            printf("Masukkan nilai UAS (0-100): ");
+            scanf("%f", &nilai_UAS);
+
+  - Perhitungan Nilai Akhir
+    - Nilai akhir dihitung berdasarkan bobot:
+      - Kehadiran: 20%
+      - Tugas: 20%
+      - UTS: 25%
+      - UAS: 35%
+        
+            nilai_akhir = (nilai_Kehadiran * 0.20) + (nilai_tugas * 0.20) + (nilai_UTS * 0.25) + (nilai_UAS * 0.35);
+
+  - Penentuan Grade dan Status
+    - Program menentukan grade dan memberikan pesan berdasarkan nilai akhir menggunakan struktur `if-else`.
+    - Logika dan Rentang Grade
+      - A: ≥ 91
+      - A-: 86–90 (digabung dengan A dalam program, ini perlu koreksi)
+      - B+: 81–85
+      - B: 76–80
+      - B-: 66–75
+      - C: 56–65
+      - D: 45–55
+      - E: < 45
+        
+  - Output program
+    - contoh Keterangan lulus (nilai tinggi)
+      - Input
+     
+            Masukkan nilai kehadiran (0-100): 90
+            Masukkan nilai tugas (0-100): 85
+            Masukkan nilai UTS (0-100): 88
+            Masukkan nilai UAS (0-100): 92
+        
+      - Output      
+
+            Selamat! Anda lulus dengan nilai yang sangat memuaskan.
+            Nilai Akhir Anda: 88.75
+            Grade Anda: A
+
+    - contoh Keterangan tidak lulus (nilai rendah)
+      - Input
+     
+            Masukkan nilai kehadiran (0-100): 40
+            Masukkan nilai tugas (0-100): 50
+            Masukkan nilai UTS (0-100): 45
+            Masukkan nilai UAS (0-100): 40
+
+
+      - Output      
+
+            Maaf, anda tidak lulus.
+            Nilai Akhir Anda: 43.25
+            Grade Anda: E
+                
 # <img src="https://media.giphy.com/media/dbDbUCnK9QBDg3Yor3/giphy.gif" width="50" height="50"> Modul 6 (Flow Control - Looping)  
 
 <img align="right" src="https://media.giphy.com/media/wJN9LnMo8VPuNiFCOo/giphy.gif?cid=ecf05e47iwylxx1a1dsbmc2psjwhmnnjoevpqkv5g8mhjazn&ep=v1_gifs_search&rid=giphy.gif&ct=g" width="250" />
