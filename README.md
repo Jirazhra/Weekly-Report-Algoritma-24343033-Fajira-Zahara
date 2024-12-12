@@ -1069,10 +1069,264 @@ Mata Kuliah: Algoritma Permograman
 
 ## Tugas dan latihan 
 **LATIHAN 1**
+- Penjelasan program deret angka
+> Program ini digunakan untuk mencetak dua jenis deret angka: Deret bilangan genap mulai dari 0 hingga 50, Deret bilangan ganjil mulai dari 1 hingga kurang dari 50.
+  - Penjelasan Program
+    1. Bilangan Genap:
+      - Loop `for (int i = 0; i <= 50; i += 2)` digunakan untuk menghasilkan bilangan genap.
+      - Dimulai dari `i = 0` dan bertambah 2 setiap iterasi `(i += 2)`, sehingga mencetak bilangan genap: 0, 2, 4, ..., 50.
+    2. Bilangan Ganjil:
+      - Loop `for (int i = 1; i < 50; i += 2)` digunakan untuk menghasilkan bilangan ganjil.
+      - Dimulai dari `i = 1` dan bertambah 2 setiap iterasi `(i += 2)`, sehingga mencetak bilangan ganjil: 1, 3, 5, ..., 49.
+    3. Output:
+      - Bilangan genap dicetak pada satu baris.
+      - Bilangan ganjil dicetak pada baris yang sama setelah bilangan genap.
+   
+            Deret angka bilangan genap: 0 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 
+            Deret angka bilangan ganjil: 1 3 5 7 9 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 
+        
 **LATIHAN 2**
-**LATIHAN 3**
-**LATIHAN 4**
+- Penjelasan program tampilan segitiga bintang
+> Program ini menghasilkan pola segitiga bintang (*) menggunakan dua loop bersarang.
+  - Deklarasi Variabel
+    - `int i = 0;` dan `int j = 0;` : Kedua variabel ini digunakan sebagai penghitung untuk dua loop yang digunakan untuk menghasilkan pola bintang.
+  - Loop Pertama (Loop luar)
+    - `for (i = 0; i < 5; i++)` : Loop ini dimulai dengan `i = 0` dan akan berlanjut hingga `i` kurang dari 5, sehingga `i` akan berubah dari 0 hingga 4. Ini menentukan jumlah baris pada pola.
+  - Loop Kedua (Loop dalam)
+    - `for (j = 0; j <= i; j++)` : Loop ini dimulai dengan `j = 0` dan akan terus berlanjut selama `j` kurang dari atau sama dengan `i`. Ini menentukan jumlah bintang (`*`) yang dicetak pada setiap baris.
+  - Print Bintang
+    - `printf("*");` : Pada setiap iterasi dalam loop dalam, program mencetak satu bintang (`*`).
+    - Jumlah bintang yang dicetak tergantung pada nilai `i`. Pada baris pertama, hanya satu bintang yang dicetak, pada baris kedua dua bintang, dan seterusnya.
+  - Baris Baru
+    - `printf("\n");` — Setelah menyelesaikan satu iterasi dalam loop dalam (yaitu, mencetak semua bintang untuk satu baris), program akan mencetak baris baru untuk memulai baris berikutnya.
+  - Output program
+
+         *
+         **
+         ***
+         ****
+         *****
+
+    > Pada baris pertama, `i = 0`, hanya ada satu bintang yang dicetak.
+    > Pada baris kedua, `i = 1`, ada dua bintang yang dicetak.
+    > Pada baris ketiga, `i = 2`, ada tiga bintang yang dicetak.
+    > Begitu seterusnya, hingga baris kelima, di mana ada lima bintang yang dicetak.
      
+**LATIHAN 3**
+- Penjelasan program tampilan segitiga dengan angka
+> Program ini menghasilkan pola angka yang menggunakan dua buah loop (loop bertingkat).
+  - Deklarasi Variabel
+    - `int i = 0;` dan `int j = 0;` : Kedua variabel ini digunakan sebagai penghitung dalam dua loop yang digunakan untuk menghasilkan pola angka.
+  - Loop Pertama (Loop luar)
+    - `for (i = 1; i < 6; i++)` : Loop ini dimulai dengan `i = 1` dan akan berjalan selama `i` kurang dari 6, sehingga nilai `i` akan berubah dari 1 hingga 5.
+  - Loop Kedua (Loop dalam)
+    - `for (j = 1; j <= i; j++)` : Loop ini dimulai dengan `j = 1` dan akan berjalan selama `j` kurang dari atau sama dengan `i`. Artinya, jumlah iterasi dalam loop ini tergantung pada nilai i.
+  - Print Angka
+    - `printf("%d ", i * j);` : Setiap kali loop dalam dijalankan, angka yang dicetak adalah hasil perkalian antara `i` dan `j`.
+    - Jadi, setiap baris menampilkan hasil perkalian yang berbeda tergantung pada nilai `i` dan `j`.
+  - Baris Baru
+    - `printf("\n");` : Setelah menyelesaikan satu iterasi dalam loop dalam, program akan mencetak baris baru agar pola angka terlihat rapi.
+  - Output program
+
+         1 
+         2 4 
+         3 6 9 
+         4 8 12 16 
+         5 10 15 20 25
+
+    > Pada baris pertama, `i = 1`, hanya ada satu angka yaitu `1 * 1 = 1`.
+    > Pada baris kedua, `i = 2`, terdapat dua angka: `1 * 2 = 2` dan `2 * 2 = 4`.
+    > Pada baris ketiga, `i = 3`, terdapat tiga angka: `1 * 3 = 3`, `2 * 3 = 6`, dan `3 * 3 = 9`.
+    > Begitu seterusnya, hingga baris kelima, dengan hasil `5 10 15 20 25`.
+
+
+**LATIHAN 4**
+- Penjelasan program simulasi mesin ATM
+  - Pendefinisian Konstanta
+    - `#define SALDO_MINIMAL 50000.0`: Menetapkan saldo minimal yang harus disisakan setelah penarikan, yaitu Rp 50.000.
+    - `#define NOMOR_REKENING "0123"`: Menetapkan nomor rekening yang valid yang digunakan dalam simulasi ATM ini. Nomor rekening yang valid adalah `"0123"`.
+      
+  - Fungsi `tampilkanMenu()` Fungsi ini digunakan untuk menampilkan menu ATM yang terdiri dari 4 pilihan:
+    - Cek Saldo
+    - Setoran
+    - Penarikan Tunai
+    - Keluar
+
+  - Variabel di dalam `main()`
+    - `inputRekening[10]`: Untuk menyimpan input nomor rekening yang dimasukkan oleh pengguna.
+    - `saldo = 175000.0`: Saldo awal pengguna, dimulai dengan Rp 175.000.
+    - `jumlah`: Digunakan untuk menyimpan jumlah yang akan disetor atau ditarik.
+    - `namaAkun[] = "Hattori"`: Nama akun pengguna.
+    - `pilihan`: Untuk menyimpan pilihan menu yang dipilih oleh pengguna.
+
+  - Proses Verifikasi Nomor Rekening Program pertama-tama meminta pengguna untuk memasukkan nomor rekening. Jika nomor rekening yang dimasukkan sesuai dengan nomor yang valid (`"0123"`), maka program melanjutkan ke menu ATM. Jika tidak valid, pengguna diminta untuk memasukkan nomor rekening lagi.
+    
+  - Menu Pilihan Program menampilkan menu ATM setelah verifikasi nomor rekening, dan pengguna diminta untuk memilih aksi (1-4).
+    1. Pilihan 1: Cek Saldo Program akan menampilkan saldo saat ini.
+    2. Pilihan 2: Setoran Program meminta pengguna untuk memasukkan jumlah setoran, memvalidasi bahwa jumlahnya positif, dan menambahkannya ke saldo. Jika jumlahnya tidak valid, pesan error akan ditampilkan.
+    3. Pilihan 3: Penarikan Tunai Program meminta jumlah yang ingin ditarik dan memastikan bahwa setelah penarikan, saldo tidak kurang dari saldo minimal (Rp 50.000). Jika saldo mencukupi, penarikan dilakukan dan saldo diperbarui. Jika tidak, pengguna diberi tahu bahwa penarikan gagal.
+    4. Pilihan 4: Keluar Program akan menampilkan pesan perpisahan dan keluar.
+       
+  - Looping Menu Setelah menyelesaikan satu aksi, program kembali ke menu utama, memungkinkan pengguna untuk memilih tindakan lain hingga memilih untuk keluar (pilihan 4).
+    
+  - Output program
+    - Skenario program
+      1. Hattori menyetorkan uang sebesar Rp. 25.000, kemudian setoran kedua sebesar Rp. 45.000. Berapakah saldo Hattori saat ini?
+         - Tampilan awal, meminta input kode rekening.
+           
+               Selamat datang di ATM!
+               Masukkan nomor rekening Anda: 123
+               Nomor rekening salah! Silakan coba lagi.    // Output
+               Masukkan nomor rekening Anda: 0123
+               Nomor rekening valid. Selamat datang, Hattori!    // Output
+           
+         - Melakukan setoran pertama dan kedua
+ 
+               === ATM ===
+               1. Cek Saldo
+               2. Setoran
+               3. Penarikan Tunai
+               4. Keluar
+               Pilih menu: 1
+               Saldo Anda saat ini adalah: Rp 175000.00     // Output
+               
+               === ATM ===
+               1. Cek Saldo
+               2. Setoran
+               3. Penarikan Tunai
+               4. Keluar
+               Pilih menu: 2
+               Masukkan jumlah setoran: Rp 25000
+               Setoran sebesar Rp 25000.00 berhasil.     // Output
+               
+               === ATM ===
+               1. Cek Saldo
+               2. Setoran
+               3. Penarikan Tunai
+               4. Keluar
+               Pilih menu: 2
+               Masukkan jumlah setoran: Rp 45000
+               Setoran sebesar Rp 45000.00 berhasil.     // Output
+               
+               === ATM ===
+               1. Cek Saldo
+               2. Setoran
+               3. Penarikan Tunai
+               4. Keluar
+               Pilih menu: 1
+               Saldo Anda saat ini adalah: Rp 245000.00     // Output   
+
+      2. Hattori melakukan penarikan pertama sebesar Rp. 50.000, kemudian penarikan kedua sebesar Rp. 45.000. Berapakah sisa saldo Hattori setelah itu?
+         - Melakukan penarikan pertama dan kedua
+           
+               === ATM ===
+               1. Cek Saldo
+               2. Setoran
+               3. Penarikan Tunai
+               4. Keluar
+               Pilih menu: 3     
+               Masukkan jumlah penarikan: Rp 50000
+               Penarikan sebesar Rp 50000.00 berhasil.     // Output
+               
+               === ATM ===
+               1. Cek Saldo
+               2. Setoran
+               3. Penarikan Tunai
+               4. Keluar
+               Pilih menu: 3
+               Masukkan jumlah penarikan: Rp 45000
+               Penarikan sebesar Rp 45000.00 berhasil.     // Output
+               
+               === ATM ===
+               1. Cek Saldo
+               2. Setoran
+               3. Penarikan Tunai
+               4. Keluar
+               Pilih menu: 1
+               Saldo Anda saat ini adalah: Rp 150000.00     // Output 
+    
+      3. Hattori melakukan penarikan ketiga sebesar Rp. 120.000. Berapakah sisa saldo Hattori?
+         - Melakukan penarikan ketiga
+        
+               === ATM ===
+               1. Cek Saldo
+               2. Setoran
+               3. Penarikan Tunai
+               4. Keluar
+               Pilih menu: 3
+               Masukkan jumlah penarikan: Rp 120000
+               Penarikan gagal! Saldo harus disisakan minimal Rp 50000.00.     // Output 
+           > Gagal melakukan penarikan karena sisa saldo tidak cukup
+
+         - Solusi:
+           1. Hattori harus mengisi saldo minimal 20.000, agar penarikan berhasil.
+        
+                  === ATM ===
+                  1. Cek Saldo
+                  2. Setoran
+                  3. Penarikan Tunai
+                  4. Keluar
+                  Pilih menu: 2
+                  Masukkan jumlah setoran: Rp 20000
+                  Setoran sebesar Rp 20000.00 berhasil.     // Output 
+                  
+                  === ATM ===
+                  1. Cek Saldo
+                  2. Setoran
+                  3. Penarikan Tunai
+                  4. Keluar
+                  Pilih menu: 3
+                  Masukkan jumlah penarikan: Rp 120000
+                  Penarikan sebesar Rp 120000.00 berhasil.     // Output 
+                  
+                  === ATM ===
+                  1. Cek Saldo
+                  2. Setoran
+                  3. Penarikan Tunai
+                  4. Keluar
+                  Pilih menu: 1
+                  Saldo Anda saat ini adalah: Rp 50000.00     // Output 
+         
+           2. Hattori hanya bisa melakukan penarikan sebesar 100.000, agar penarikan berhasil.
+                             
+                  === ATM ===
+                  1. Cek Saldo
+                  2. Setoran
+                  3. Penarikan Tunai
+                  4. Keluar
+                  Pilih menu: 1
+                  4. Keluar
+                  Pilih menu: 2
+                  Masukkan jumlah setoran: Rp 100000
+                  Setoran sebesar Rp 100000.00 berhasil.     // Output 
+                  
+                  === ATM ===
+                  1. Cek Saldo
+                  2. Setoran
+                  3. Penarikan Tunai
+                  4. Keluar
+                  Pilih menu: 3
+                  Masukkan jumlah penarikan: Rp 100000
+                  Penarikan sebesar Rp 100000.00 berhasil.     // Output 
+                  
+                  === ATM ===
+                  1. Cek Saldo
+                  2. Setoran
+                  3. Penarikan Tunai
+                  4. Keluar
+                  Pilih menu: 1
+                  Saldo Anda saat ini adalah: Rp 50000.00     // Output 
+
+              - tampilan keluar
+                
+                     === ATM ===
+                     1. Cek Saldo
+                     2. Setoran
+                     3. Penarikan Tunai
+                     4. Keluar
+                     Pilih menu: 4
+                     Terima kasih telah menggunakan layanan ATM. Sampai jumpa!     // Output 
+
 # <img src="https://media.giphy.com/media/ggpoVsIg0LwtHfTBEY/giphy.gif" width="50" height="50"> Modul 7 (Array)  
 
 <img align="right" src="https://media.giphy.com/media/Roq7iuYrLeJIKFtlfQ/giphy.gif?cid=ecf05e477gt8nrvlv6608d4xghw09d2w03wavfskmcrag930&ep=v1_gifs_related&rid=giphy.gif&ct=g" width="280" />
